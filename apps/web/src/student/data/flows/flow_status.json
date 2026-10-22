@@ -1,0 +1,84 @@
+{
+  "id": "status",
+  "title_fa": "وضعیت من",
+  "entry": "load",
+  "nodes": {
+    "load": {
+      "type": "action",
+      "action": {
+        "handler": "analytics.weekKpis",
+        "saveAs": "k"
+      },
+      "next": "card"
+    },
+    "card": {
+      "type": "card",
+      "card": "KpiCard",
+      "buttons": [
+        [
+          {
+            "label_fa": "چرا افت کردم؟",
+            "next": "drop"
+          },
+          {
+            "label_fa": "نشتی درصدم کجاست؟",
+            "next": "leak"
+          }
+        ],
+        [
+          {
+            "label_fa": "بهترین ساعتم؟",
+            "next": "time"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "drop": {
+      "type": "action",
+      "action": {
+        "handler": "insights.explainDrop",
+        "saveAs": "i"
+      },
+      "next": "insight"
+    },
+    "leak": {
+      "type": "action",
+      "action": {
+        "handler": "analytics.pointsLost",
+        "saveAs": "i"
+      },
+      "next": "insight"
+    },
+    "time": {
+      "type": "action",
+      "action": {
+        "handler": "profile.bestBlock",
+        "saveAs": "i"
+      },
+      "next": "insight"
+    },
+    "insight": {
+      "type": "card",
+      "card": "InsightCard",
+      "buttons": [
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "card"
+          }
+        ]
+      ]
+    }
+  },
+  "version": "1.0"
+}

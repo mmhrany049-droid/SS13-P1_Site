@@ -1,0 +1,76 @@
+{
+  "id": "motivation.sdt",
+  "version": "1.0",
+  "construct": "Autonomous vs controlled study motivation",
+  "source": "SS custom (non-clinical, educational); inspired by Self-Determination Theory (Ryan & Deci 2000)",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "auto": "انگیزه درونی/خودمختار",
+    "ctrl": "انگیزه کنترل‌شده"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "درس می‌خوانم چون یاد گرفتن برایم جالب است.",
+      "sub": "auto",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "درس می‌خوانم چون برای آینده‌ام مهم است.",
+      "sub": "auto",
+      "key": 1
+    },
+    {
+      "n": 3,
+      "fa": "درس می‌خوانم چون اگر نخوانم احساس گناه می‌کنم.",
+      "sub": "ctrl",
+      "key": 1
+    },
+    {
+      "n": 4,
+      "fa": "درس می‌خوانم چون دیگران از من انتظار دارند.",
+      "sub": "ctrl",
+      "key": 1
+    },
+    {
+      "n": 5,
+      "fa": "از حل یک تست سخت لذت می‌برم.",
+      "sub": "auto",
+      "key": 1
+    },
+    {
+      "n": 6,
+      "fa": "فقط برای نمره درس می‌خوانم.",
+      "sub": "ctrl",
+      "key": 1
+    },
+    {
+      "n": 7,
+      "fa": "خودم هدف‌هایم را انتخاب می‌کنم.",
+      "sub": "auto",
+      "key": 1
+    },
+    {
+      "n": 8,
+      "fa": "اگر تشویق یا تنبیهی نباشد درس نمی‌خوانم.",
+      "sub": "ctrl",
+      "key": 1
+    }
+  ]
+}

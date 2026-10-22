@@ -1,0 +1,65 @@
+{
+  "id": "session.preference",
+  "version": "1.0",
+  "construct": "Session preference & energy rhythm",
+  "source": "SS custom (non-clinical, educational)",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "short": "ترجیح جلسه کوتاه",
+    "dip": "افت بعدازظهر",
+    "music": "تحمل صدا"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "جلسه‌های کوتاه (۲۵ دقیقه) برایم بهتر است.",
+      "sub": "short",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "دوست دارم یک‌سره چند ساعت بخوانم.",
+      "sub": "short",
+      "key": -1
+    },
+    {
+      "n": 3,
+      "fa": "بعد از ناهار انرژی‌ام افت می‌کند.",
+      "sub": "dip",
+      "key": 1
+    },
+    {
+      "n": 4,
+      "fa": "استراحت کوتاه بین جلسه‌ها کمکم می‌کند.",
+      "sub": "short",
+      "key": 1
+    },
+    {
+      "n": 5,
+      "fa": "موسیقی بی‌کلام تمرکزم را بیشتر می‌کند.",
+      "sub": "music",
+      "key": 1
+    },
+    {
+      "n": 6,
+      "fa": "محیط ساکت برایم ضروری است.",
+      "sub": "music",
+      "key": -1
+    }
+  ]
+}

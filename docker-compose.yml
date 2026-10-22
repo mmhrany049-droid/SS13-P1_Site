@@ -1,0 +1,18 @@
+# SS 13 — one command: docker compose up -d     (set SS_DOMAIN and SS_CONTACT_EMAIL in .env first; point the domain's DNS A record at this server)
+services:
+  ss:
+    build: .
+    restart: always
+    env_file: .env
+    environment: { DATA_DIR: /opt/ss/data }
+    volumes: [ "./data:/opt/ss/data" ]
+    expose: [ "8080" ]
+  caddy:
+    image: caddy:2
+    restart: always
+    env_file: .env
+    environment: { SS_UPSTREAM: "ss:8080" }
+    ports: [ "80:80", "443:443" ]
+    volumes: [ "./deploy/Caddyfile:/etc/caddy/Caddyfile:ro", "caddy_data:/data" ]
+    depends_on: [ ss ]
+volumes: { caddy_data: {} }

@@ -1,0 +1,13 @@
+{
+  "name": "@ss/web",
+  "version": "13.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SS 12 — the single Persian RTL site: unified login, /today (student) and /workspace (organisation)",
+  "dependencies": {
+    "@ss/domain": "13.0.0",
+    "@ss/ui": "13.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

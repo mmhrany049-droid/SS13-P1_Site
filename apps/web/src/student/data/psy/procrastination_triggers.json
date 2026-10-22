@@ -1,0 +1,81 @@
+{
+  "id": "procrastination.triggers",
+  "version": "1.0",
+  "construct": "Procrastination functional triggers",
+  "source": "SS custom (non-clinical, educational)",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "unclear": "ابهام",
+    "big": "بزرگی کار",
+    "boring": "کسالت",
+    "anxious": "اضطراب",
+    "time": "خوش‌بینی زمانی",
+    "tired": "خستگی",
+    "social": "اثر همراه"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "وقتی نمی‌دانم دقیقاً چه کار کنم، شروع نمی‌کنم.",
+      "sub": "unclear",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "کار بزرگ مرا می‌ترساند.",
+      "sub": "big",
+      "key": 1
+    },
+    {
+      "n": 3,
+      "fa": "درس‌های کسل‌کننده را عقب می‌اندازم.",
+      "sub": "boring",
+      "key": 1
+    },
+    {
+      "n": 4,
+      "fa": "از ترس بد شدن نتیجه، شروع نمی‌کنم.",
+      "sub": "anxious",
+      "key": 1
+    },
+    {
+      "n": 5,
+      "fa": "فکر می‌کنم بعداً وقت بیشتری دارم.",
+      "sub": "time",
+      "key": 1
+    },
+    {
+      "n": 6,
+      "fa": "خستگی دلیل اصلی عقب انداختنم است.",
+      "sub": "tired",
+      "key": 1
+    },
+    {
+      "n": 7,
+      "fa": "وقتی کار را به قدم‌های کوچک می‌شکنم راحت‌تر شروع می‌کنم.",
+      "sub": "big",
+      "key": 1
+    },
+    {
+      "n": 8,
+      "fa": "اگر کنار کسی درس بخوانم کمتر عقب می‌اندازم.",
+      "sub": "social",
+      "key": 1
+    }
+  ]
+}

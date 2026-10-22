@@ -1,0 +1,78 @@
+{
+  "id": "selfcontrol.study",
+  "version": "1.0",
+  "construct": "Trait self-control in study",
+  "source": "SS custom (non-clinical, educational)",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "start": "شروع",
+    "distract": "حواس‌پرتی(معکوس)",
+    "persist": "پشتکار",
+    "delay": "تأخیر لذت"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "وقتی تصمیم می‌گیرم بخوانم، معمولاً واقعاً شروع می‌کنم.",
+      "sub": "start",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "گوشی یا شبکه‌های اجتماعی به‌راحتی حواسم را پرت می‌کند.",
+      "sub": "distract",
+      "key": -1
+    },
+    {
+      "n": 3,
+      "fa": "کارهای سخت را تا آخرین لحظه عقب می‌اندازم.",
+      "sub": "start",
+      "key": -1
+    },
+    {
+      "n": 4,
+      "fa": "می‌توانم یک جلسه ۴۰ دقیقه‌ای را بدون وقفه ادامه دهم.",
+      "sub": "persist",
+      "key": 1
+    },
+    {
+      "n": 5,
+      "fa": "وقتی خسته می‌شوم زود کار را رها می‌کنم.",
+      "sub": "persist",
+      "key": -1
+    },
+    {
+      "n": 6,
+      "fa": "قبل از تفریح، کار درسی‌ام را تمام می‌کنم.",
+      "sub": "delay",
+      "key": 1
+    },
+    {
+      "n": 7,
+      "fa": "برای خودم قانون می‌گذارم و به آن پایبندم.",
+      "sub": "delay",
+      "key": 1
+    },
+    {
+      "n": 8,
+      "fa": "کارهایی را شروع می‌کنم و نیمه‌کاره رها می‌کنم.",
+      "sub": "persist",
+      "key": -1
+    }
+  ]
+}

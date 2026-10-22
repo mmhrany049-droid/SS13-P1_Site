@@ -1,0 +1,170 @@
+{
+  "id": "bigfive.mini-ipip",
+  "version": "1.0",
+  "construct": "Big Five (O,C,E,A,N)",
+  "source": "Donnellan, Oswald, Baird & Lucas (2006), Psychological Assessment 18(2):192-203; items from IPIP (ipip.ori.org)",
+  "license": "public-domain (IPIP)",
+  "translationStatus": "unvalidated-draft (OPEN-06)",
+  "intendedUse": "self-insight and adaptation priors only; never selection or labeling",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً درباره‌ام درست نیست",
+      "کمی",
+      "تا حدی",
+      "زیاد",
+      "کاملاً درست است"
+    ]
+  },
+  "scoring": "per trait: reverse items r -> 6-r; mean of 4 items; score0to100 = (mean-1)/4*100",
+  "alphaDefault": {
+    "O": 0.65,
+    "C": 0.69,
+    "E": 0.77,
+    "A": 0.7,
+    "N": 0.68
+  },
+  "items": [
+    {
+      "n": 1,
+      "en": "Am the life of the party.",
+      "fa": "در جمع، آدم پرشور و محور جمع هستم.",
+      "trait": "E",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "en": "Sympathize with others' feelings.",
+      "fa": "با احساسات دیگران همدردی می‌کنم.",
+      "trait": "A",
+      "key": 1
+    },
+    {
+      "n": 3,
+      "en": "Get chores done right away.",
+      "fa": "کارهایم را فوراً انجام می‌دهم.",
+      "trait": "C",
+      "key": 1
+    },
+    {
+      "n": 4,
+      "en": "Have frequent mood swings.",
+      "fa": "حال و هوایم زیاد تغییر می‌کند.",
+      "trait": "N",
+      "key": 1
+    },
+    {
+      "n": 5,
+      "en": "Have a vivid imagination.",
+      "fa": "تخیل قوی و زنده‌ای دارم.",
+      "trait": "O",
+      "key": 1
+    },
+    {
+      "n": 6,
+      "en": "Don't talk a lot.",
+      "fa": "زیاد حرف نمی‌زنم.",
+      "trait": "E",
+      "key": -1
+    },
+    {
+      "n": 7,
+      "en": "Am not interested in other people's problems.",
+      "fa": "مشکلات دیگران برایم جالب نیست.",
+      "trait": "A",
+      "key": -1
+    },
+    {
+      "n": 8,
+      "en": "Often forget to put things back in their proper place.",
+      "fa": "اغلب یادم می‌رود وسایل را سر جایشان بگذارم.",
+      "trait": "C",
+      "key": -1
+    },
+    {
+      "n": 9,
+      "en": "Am relaxed most of the time.",
+      "fa": "بیشتر وقت‌ها آرام هستم.",
+      "trait": "N",
+      "key": -1
+    },
+    {
+      "n": 10,
+      "en": "Am not interested in abstract ideas.",
+      "fa": "ایده‌های انتزاعی برایم جالب نیست.",
+      "trait": "O",
+      "key": -1
+    },
+    {
+      "n": 11,
+      "en": "Talk to a lot of different people at parties.",
+      "fa": "در مهمانی‌ها با آدم‌های زیادی حرف می‌زنم.",
+      "trait": "E",
+      "key": 1
+    },
+    {
+      "n": 12,
+      "en": "Feel others' emotions.",
+      "fa": "احساسات دیگران را حس می‌کنم.",
+      "trait": "A",
+      "key": 1
+    },
+    {
+      "n": 13,
+      "en": "Like order.",
+      "fa": "نظم را دوست دارم.",
+      "trait": "C",
+      "key": 1
+    },
+    {
+      "n": 14,
+      "en": "Get upset easily.",
+      "fa": "زود ناراحت می‌شوم.",
+      "trait": "N",
+      "key": 1
+    },
+    {
+      "n": 15,
+      "en": "Have difficulty understanding abstract ideas.",
+      "fa": "فهمیدن ایده‌های انتزاعی برایم سخت است.",
+      "trait": "O",
+      "key": -1
+    },
+    {
+      "n": 16,
+      "en": "Keep in the background.",
+      "fa": "ترجیح می‌دهم در حاشیه باشم.",
+      "trait": "E",
+      "key": -1
+    },
+    {
+      "n": 17,
+      "en": "Am not really interested in others.",
+      "fa": "واقعاً به دیگران علاقه‌ای ندارم.",
+      "trait": "A",
+      "key": -1
+    },
+    {
+      "n": 18,
+      "en": "Make a mess of things.",
+      "fa": "کارها را به هم می‌ریزم.",
+      "trait": "C",
+      "key": -1
+    },
+    {
+      "n": 19,
+      "en": "Seldom feel blue.",
+      "fa": "به‌ندرت غمگین می‌شوم.",
+      "trait": "N",
+      "key": -1
+    },
+    {
+      "n": 20,
+      "en": "Do not have a good imagination.",
+      "fa": "تخیل خوبی ندارم.",
+      "trait": "O",
+      "key": -1
+    }
+  ]
+}

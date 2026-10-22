@@ -1,0 +1,128 @@
+{
+  "id": "onboarding",
+  "title_fa": "شروع",
+  "entry": "hi",
+  "nodes": {
+    "hi": {
+      "type": "message",
+      "text_fa": "سلام! ۳ دقیقه وقت بذار تا برنامه رو برای خودت تنظیم کنیم.",
+      "buttons": [
+        [
+          {
+            "label_fa": "بزن بریم",
+            "next": "books"
+          }
+        ]
+      ]
+    },
+    "books": {
+      "type": "ask",
+      "text_fa": "کدام کتاب‌ها را داری؟",
+      "ask": {
+        "slot": "bookIds",
+        "input": "choice",
+        "choicesFrom": "books.seed.multi"
+      },
+      "next": "exam"
+    },
+    "exam": {
+      "type": "ask",
+      "text_fa": "آزمون بعدی‌ات چه روزیه؟ (اختیاری)",
+      "ask": {
+        "slot": "examDate",
+        "input": "date"
+      },
+      "next": "avail"
+    },
+    "avail": {
+      "type": "menu",
+      "text_fa": "روزهای مدرسه معمولاً چند ساعت وقت مطالعه داری؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "۱–۲",
+            "set": {
+              "weekdayMin": 90
+            },
+            "next": "taught"
+          },
+          {
+            "label_fa": "۲–۳",
+            "set": {
+              "weekdayMin": 150
+            },
+            "next": "taught"
+          },
+          {
+            "label_fa": "۳–۴",
+            "set": {
+              "weekdayMin": 210
+            },
+            "next": "taught"
+          },
+          {
+            "label_fa": "بیشتر",
+            "set": {
+              "weekdayMin": 270
+            },
+            "next": "taught"
+          }
+        ]
+      ]
+    },
+    "taught": {
+      "type": "message",
+      "text_fa": "حالا مباحثی که خوانده‌ای را تیک بزن تا پیش‌بینی درست شود.",
+      "buttons": [
+        [
+          {
+            "label_fa": "تیک‌زدن مباحث",
+            "deepLink": "/taught"
+          }
+        ],
+        [
+          {
+            "label_fa": "بعداً",
+            "next": "profile"
+          }
+        ]
+      ]
+    },
+    "profile": {
+      "type": "menu",
+      "text_fa": "می‌خواهی پرسشنامه‌های شناخت خودت را هم پر کنی؟ (اختیاری، خصوصی)",
+      "buttons": [
+        [
+          {
+            "label_fa": "آره",
+            "deepLink": "/profile"
+          },
+          {
+            "label_fa": "فعلاً نه",
+            "next": "done"
+          }
+        ]
+      ]
+    },
+    "done": {
+      "type": "action",
+      "action": {
+        "handler": "onboarding.finish"
+      },
+      "next": "end"
+    },
+    "end": {
+      "type": "end",
+      "text_fa": "آماده‌ای 🎯 اولین تستت رو ثبت کن.",
+      "buttons": [
+        [
+          {
+            "label_fa": "📝 ثبت تست",
+            "flow": "log.quick"
+          }
+        ]
+      ]
+    }
+  },
+  "version": "1.0"
+}

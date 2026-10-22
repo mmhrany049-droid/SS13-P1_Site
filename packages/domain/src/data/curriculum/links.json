@@ -1,0 +1,766 @@
+{
+ "linksVersion": "4.0.0",
+ "types": {
+  "identical": "همان محتوای کتاب درسی؛ مقایسهٔ مستقیم مجاز",
+  "equivalent": "همان مفهوم با عمق نزدیک؛ مقایسه با برچسب «معادل»",
+  "partial": "هم‌پوشانی جزئی با overlap؛ فقط مقایسهٔ وزن‌دار و با هشدار",
+  "prerequisite": "پیش‌نیاز؛ برای گراف مهارت، نه مقایسه"
+ },
+ "sharedTextbooks": [
+  "tb.10.riazi1",
+  "tb.10.shimi1",
+  "tb.11.shimi2"
+ ],
+ "onlyRf": [
+  "tb.10.hendese1",
+  "tb.11.hendese2",
+  "tb.11.amar/c1",
+  "tb.11.amar/c4",
+  "tb.11.hesaban1/c1/l4",
+  "tb.11.hesaban1/c4/l4",
+  "tb.11.hesaban1/c5/l2",
+  "tb.10.fizik1.rf/c4/s6",
+  "tb.10.fizik1.rf/c5",
+  "tb.11.fizik2.rf/c1/s11"
+ ],
+ "onlyTj": [
+  "tb.10.zist1",
+  "tb.11.zist2"
+ ],
+ "links": [
+  {
+   "a": "tb.10.fizik1.rf/c1",
+   "b": "tb.10.fizik1.tj/c1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c1/s1",
+   "b": "tb.10.fizik1.tj/c1/s1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c1/s2",
+   "b": "tb.10.fizik1.tj/c1/s2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c1/s3",
+   "b": "tb.10.fizik1.tj/c1/s3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c1/s4",
+   "b": "tb.10.fizik1.tj/c1/s4",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c1/s5",
+   "b": "tb.10.fizik1.tj/c1/s5",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c1/s6",
+   "b": "tb.10.fizik1.tj/c1/s6",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c1/q",
+   "b": "tb.10.fizik1.tj/c1/q",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c2",
+   "b": "tb.10.fizik1.tj/c2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c2/s1",
+   "b": "tb.10.fizik1.tj/c2/s1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c2/s2",
+   "b": "tb.10.fizik1.tj/c2/s2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c2/s3",
+   "b": "tb.10.fizik1.tj/c2/s3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c2/s4",
+   "b": "tb.10.fizik1.tj/c2/s4",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c2/s5",
+   "b": "tb.10.fizik1.tj/c2/s5",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c2/q",
+   "b": "tb.10.fizik1.tj/c2/q",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3",
+   "b": "tb.10.fizik1.tj/c3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/s1",
+   "b": "tb.10.fizik1.tj/c3/s1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/s2",
+   "b": "tb.10.fizik1.tj/c3/s2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/s3",
+   "b": "tb.10.fizik1.tj/c3/s3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/s4",
+   "b": "tb.10.fizik1.tj/c3/s4",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/s5",
+   "b": "tb.10.fizik1.tj/c3/s5",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/s6",
+   "b": "tb.10.fizik1.tj/c3/s6",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/s7",
+   "b": "tb.10.fizik1.tj/c3/s7",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c3/q",
+   "b": "tb.10.fizik1.tj/c3/q",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c4",
+   "b": "tb.10.fizik1.tj/c4",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.85,
+   "note": "ریاضی: بخش 4-6 قوانین گازها اضافه دارد"
+  },
+  {
+   "a": "tb.10.fizik1.rf/c4/s1",
+   "b": "tb.10.fizik1.tj/c4/s1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c4/s2",
+   "b": "tb.10.fizik1.tj/c4/s2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c4/s3",
+   "b": "tb.10.fizik1.tj/c4/s3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c4/s4",
+   "b": "tb.10.fizik1.tj/c4/s4",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c4/s5",
+   "b": "tb.10.fizik1.tj/c4/s5",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.10.fizik1.rf/c4/q",
+   "b": "tb.10.fizik1.tj/c4/q",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.8
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s1",
+   "b": "tb.11.fizik2.tj/c1/s1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s2",
+   "b": "tb.11.fizik2.tj/c1/s2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s3",
+   "b": "tb.11.fizik2.tj/c1/s3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s4",
+   "b": "tb.11.fizik2.tj/c1/s4",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s5",
+   "b": "tb.11.fizik2.tj/c1/s5",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s6",
+   "b": "tb.11.fizik2.tj/c1/s6",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s7",
+   "b": "tb.11.fizik2.tj/c1/s7",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s8",
+   "b": "tb.11.fizik2.tj/c1/s8",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s9",
+   "b": "tb.11.fizik2.tj/c1/s9",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "عنوان متفاوت: «میدان در داخل رساناها» ↔ «توزیع بار در اجسام رسانا»"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s10",
+   "b": "tb.11.fizik2.tj/c1/s10",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1/s12",
+   "b": "tb.11.fizik2.tj/c1/s11",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c1",
+   "b": "tb.11.fizik2.tj/c1",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.9,
+   "note": "ریاضی: 1-11 خازن با دی‌الکتریک اضافه دارد"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c2",
+   "b": "tb.11.fizik2.tj/c2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c2/s1",
+   "b": "tb.11.fizik2.tj/c2/s1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c2/s2",
+   "b": "tb.11.fizik2.tj/c2/s2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c2/s3",
+   "b": "tb.11.fizik2.tj/c2/s3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c2/s4",
+   "b": "tb.11.fizik2.tj/c2/s4",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c2/s5",
+   "b": "tb.11.fizik2.tj/c2/s5",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c2/s6",
+   "b": "tb.11.fizik2.tj/c2/s6",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c3/s1",
+   "b": "tb.11.fizik2.tj/c3/s1",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c3/s2",
+   "b": "tb.11.fizik2.tj/c3/s2",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c3/s3",
+   "b": "tb.11.fizik2.tj/c3/s3",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c3/s4",
+   "b": "tb.11.fizik2.tj/c3/s4",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c3/s5",
+   "b": "tb.11.fizik2.tj/c3/s5",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c3/s6",
+   "b": "tb.11.fizik2.tj/c3/s6",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0
+  },
+  {
+   "a": "tb.11.fizik2.rf/c4/s1",
+   "b": "tb.11.fizik2.tj/c3/s7",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0,
+   "note": "شماره‌گذاری متفاوت: ریاضی 4-x ↔ تجربی 3-(x+6)"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c4/s2",
+   "b": "tb.11.fizik2.tj/c3/s8",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0,
+   "note": "شماره‌گذاری متفاوت: ریاضی 4-x ↔ تجربی 3-(x+6)"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c4/s3",
+   "b": "tb.11.fizik2.tj/c3/s9",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0,
+   "note": "شماره‌گذاری متفاوت: ریاضی 4-x ↔ تجربی 3-(x+6)"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c4/s4",
+   "b": "tb.11.fizik2.tj/c3/s10",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0,
+   "note": "شماره‌گذاری متفاوت: ریاضی 4-x ↔ تجربی 3-(x+6)"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c4/s5",
+   "b": "tb.11.fizik2.tj/c3/s11",
+   "type": "identical",
+   "scope": "sameGrade",
+   "overlap": 1.0,
+   "note": "شماره‌گذاری متفاوت: ریاضی 4-x ↔ تجربی 3-(x+6)"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c3",
+   "b": "tb.11.fizik2.tj/c3",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.55,
+   "note": "تجربی فصل ۳ = ریاضی فصل ۳ + فصل ۴"
+  },
+  {
+   "a": "tb.11.fizik2.rf/c4",
+   "b": "tb.11.fizik2.tj/c3",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.45
+  },
+  {
+   "a": "tb.11.riazi2/c1/l1",
+   "b": "tb.11.hesaban1/c1/l5",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c1/l2",
+   "b": "tb.11.hesaban1/c1/l2",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.6,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c1/l3",
+   "b": "tb.11.hesaban1/c1/l3",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c3/l1",
+   "b": "tb.11.hesaban1/c2/l2",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.6,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c3/l1",
+   "b": "tb.11.hesaban1/c2/l1",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.4,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c3/l2",
+   "b": "tb.11.hesaban1/c2/l3",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c3/l3",
+   "b": "tb.11.hesaban1/c2/l4",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c4/l1",
+   "b": "tb.11.hesaban1/c4/l1",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c4/l2",
+   "b": "tb.11.hesaban1/c4/l2",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.6,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c4/l3",
+   "b": "tb.11.hesaban1/c4/l3",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c5/l1",
+   "b": "tb.11.hesaban1/c3/l1",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c5/l2",
+   "b": "tb.11.hesaban1/c3/l2",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.7,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c5/l3",
+   "b": "tb.11.hesaban1/c3/l3",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.5,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c6/l1",
+   "b": "tb.11.hesaban1/c5/l1",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c6/l2",
+   "b": "tb.11.hesaban1/c5/l3",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.5,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c6/l2",
+   "b": "tb.11.hesaban1/c5/l4",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.5,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c6/l3",
+   "b": "tb.11.hesaban1/c5/l5",
+   "type": "equivalent",
+   "scope": "sameGrade",
+   "overlap": 0.8,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c7/l1",
+   "b": "tb.11.amar/c2/l3",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.6,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c7/l1",
+   "b": "tb.11.amar/c2/l4",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.6,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c7/l2",
+   "b": "tb.11.amar/c3",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.6,
+   "note": "نیازمند تأیید عمق محتوا (فقط از روی عنوان)"
+  },
+  {
+   "a": "tb.11.riazi2/c3",
+   "b": "tb.11.hesaban1/c2",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.7,
+   "note": "سطح فصل"
+  },
+  {
+   "a": "tb.11.riazi2/c4",
+   "b": "tb.11.hesaban1/c4",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.65,
+   "note": "سطح فصل"
+  },
+  {
+   "a": "tb.11.riazi2/c5",
+   "b": "tb.11.hesaban1/c3",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.7,
+   "note": "سطح فصل"
+  },
+  {
+   "a": "tb.11.riazi2/c6",
+   "b": "tb.11.hesaban1/c5",
+   "type": "partial",
+   "scope": "sameGrade",
+   "overlap": 0.65,
+   "note": "سطح فصل"
+  },
+  {
+   "a": "tb.11.riazi2/c2/l1",
+   "b": "tb.10.hendese1/c1/l1",
+   "type": "equivalent",
+   "scope": "crossGrade",
+   "overlap": 0.8,
+   "note": "بین‌پایه‌ای: تجربی یازدهم ↔ ریاضی دهم"
+  },
+  {
+   "a": "tb.11.riazi2/c2/l2",
+   "b": "tb.10.hendese1/c1/l2",
+   "type": "partial",
+   "scope": "crossGrade",
+   "overlap": 0.5,
+   "note": "بین‌پایه‌ای: تجربی یازدهم ↔ ریاضی دهم"
+  },
+  {
+   "a": "tb.11.riazi2/c2/l2",
+   "b": "tb.10.hendese1/c2/l2",
+   "type": "partial",
+   "scope": "crossGrade",
+   "overlap": 0.5,
+   "note": "بین‌پایه‌ای: تجربی یازدهم ↔ ریاضی دهم"
+  },
+  {
+   "a": "tb.11.riazi2/c2/l3",
+   "b": "tb.10.hendese1/c2/l3",
+   "type": "equivalent",
+   "scope": "crossGrade",
+   "overlap": 0.8,
+   "note": "بین‌پایه‌ای: تجربی یازدهم ↔ ریاضی دهم"
+  },
+  {
+   "a": "tb.10.riazi1/c1/l4",
+   "b": "tb.11.hesaban1/c1/l1",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c4/l1",
+   "b": "tb.11.hesaban1/c1/l2",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c5",
+   "b": "tb.11.hesaban1/c2",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c2",
+   "b": "tb.11.hesaban1/c4",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c7/l1",
+   "b": "tb.11.amar/c2",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c4/l1",
+   "b": "tb.11.riazi2/c1/l2",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c5",
+   "b": "tb.11.riazi2/c3",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c2",
+   "b": "tb.11.riazi2/c4",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c7/l1",
+   "b": "tb.11.riazi2/c7/l1",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  },
+  {
+   "a": "tb.10.riazi1/c7/l2",
+   "b": "tb.11.riazi2/c7/l2",
+   "type": "prerequisite",
+   "scope": "crossGrade"
+  }
+ ]
+}

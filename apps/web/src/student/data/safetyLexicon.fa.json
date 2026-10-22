@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "note": "editable; matched after Persian normalization, whole-word or phrase",
+  "phrases": [
+    "خودکشی",
+    "می‌خواهم بمیرم",
+    "میخوام بمیرم",
+    "دیگر نمی‌خواهم زنده باشم",
+    "به خودم آسیب",
+    "خودزنی",
+    "رگم را بزنم",
+    "کاش نبودم",
+    "تمامش کنم"
+  ],
+  "helpNumbers": {
+    "emergency": "115",
+    "police": "110",
+    "counsel": "1480",
+    "socialEmergency": "123",
+    "verified": false
+  }
+}

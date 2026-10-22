@@ -1,0 +1,57 @@
+{
+  "id": "chronotype.custom",
+  "version": "1.0",
+  "construct": "Morningness–eveningness (custom)",
+  "source": "SS custom (non-clinical, educational)",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "morning": "صبح‌گرایی"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "اگر آزاد باشم، صبح زود بیدار می‌شوم.",
+      "sub": "morning",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "ذهنم صبح‌ها از همه وقت تیزتر است.",
+      "sub": "morning",
+      "key": 1
+    },
+    {
+      "n": 3,
+      "fa": "شب‌ها تا دیروقت انرژی دارم.",
+      "sub": "morning",
+      "key": -1
+    },
+    {
+      "n": 4,
+      "fa": "بعد از ساعت ۲۲ تمرکزم بهتر است.",
+      "sub": "morning",
+      "key": -1
+    },
+    {
+      "n": 5,
+      "fa": "روزهای تعطیل زود بیدار می‌شوم.",
+      "sub": "morning",
+      "key": 1
+    }
+  ]
+}

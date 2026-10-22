@@ -1,0 +1,9 @@
+/* Vazirmatn (SIL Open Font License 1.1, © Saber Rastikerdar) bundled locally: works offline, no CDN. */
+@font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('./fonts/Vazirmatn.woff2') format('woff2'); }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { margin: 0; background: #F6F1EA; }
+body { -webkit-font-smoothing: antialiased; }
+*:focus-visible { outline: 2px solid #B3184A; outline-offset: 2px; }

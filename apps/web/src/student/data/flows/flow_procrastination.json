@@ -1,0 +1,96 @@
+{
+  "id": "procrastination",
+  "title_fa": "شروع نمی‌کنم",
+  "entry": "why",
+  "nodes": {
+    "why": {
+      "type": "menu",
+      "text_fa": "راستش رو بگو، کدومه؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "کار مبهمه",
+            "set": {
+              "t": "unclear"
+            },
+            "next": "act"
+          },
+          {
+            "label_fa": "خیلی بزرگه",
+            "set": {
+              "t": "big"
+            },
+            "next": "act"
+          }
+        ],
+        [
+          {
+            "label_fa": "حوصله‌سربره",
+            "set": {
+              "t": "boring"
+            },
+            "next": "act"
+          },
+          {
+            "label_fa": "استرس دارم",
+            "set": {
+              "t": "anxious"
+            },
+            "next": "act"
+          }
+        ],
+        [
+          {
+            "label_fa": "وقت ندارم",
+            "set": {
+              "t": "time"
+            },
+            "next": "act"
+          },
+          {
+            "label_fa": "خسته‌ام",
+            "set": {
+              "t": "tired"
+            },
+            "next": "act"
+          }
+        ]
+      ]
+    },
+    "act": {
+      "type": "action",
+      "action": {
+        "handler": "procrastination.suggest",
+        "args": {
+          "trigger": "{{t}}"
+        },
+        "saveAs": "s"
+      },
+      "next": "card"
+    },
+    "card": {
+      "type": "card",
+      "card": "AdviceCard",
+      "text_fa": "{{s.text}}\nمنبع: {{s.source}}",
+      "buttons": [
+        [
+          {
+            "label_fa": "{{s.actionLabel}}",
+            "action": "{{s.action}}"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    }
+  },
+  "version": "1.0"
+}

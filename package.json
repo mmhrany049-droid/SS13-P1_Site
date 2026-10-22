@@ -1,0 +1,40 @@
+{
+  "name": "ss",
+  "version": "13.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SS 12 — one site, one identity: study cockpit (/today) + organisation desk (/workspace) on one API",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning --import ./scripts/ss-resolve.mjs apps/api/src/server.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build-web.mjs",
+    "test": "node --disable-warning=ExperimentalWarning --import ./tests/support/register.mjs --test --test-timeout=30000 apps/web/tests/*.test.js tests/*.test.mjs",
+    "test:api": "node --disable-warning=ExperimentalWarning --import ./tests/support/register.mjs --test --test-timeout=30000 tests/api.test.mjs",
+    "test:e2e": "node --disable-warning=ExperimentalWarning --import ./scripts/ss-resolve.mjs tests/e2e/run.mjs",
+    "demo": "node scripts/demo.mjs",
+    "seed:demo": "node --disable-warning=ExperimentalWarning --import ./scripts/ss-resolve.mjs scripts/seed-demo.mjs",
+    "reset": "node scripts/reset.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "node --disable-warning=ExperimentalWarning --import ./scripts/ss-resolve.mjs apps/api/src/server.mjs",
+    "build:app": "SS_BUILD=app node scripts/build-web.mjs",
+    "build:site": "SS_BUILD=site node scripts/build-web.mjs",
+    "superadmin": "node --disable-warning=ExperimentalWarning --import ./scripts/ss-resolve.mjs scripts/seed-superadmin.mjs",
+    "test:web": "node --disable-warning=ExperimentalWarning --import ./tests/support/register.mjs --test --test-timeout=30000 apps/web/tests/*.test.js tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.2",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.18",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.5"
+  }
+}

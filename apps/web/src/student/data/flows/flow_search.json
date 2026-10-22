@@ -1,0 +1,82 @@
+{
+  "id": "search",
+  "title_fa": "جستجو",
+  "entry": "q",
+  "nodes": {
+    "q": {
+      "type": "ask",
+      "text_fa": "دنبال چی می‌گردی؟ (مثل «آنتالپی» یا «کلید»)",
+      "ask": {
+        "slot": "query",
+        "input": "text"
+      },
+      "next": "run"
+    },
+    "run": {
+      "type": "action",
+      "action": {
+        "handler": "search.local",
+        "args": {
+          "q": "{{query}}"
+        },
+        "saveAs": "res"
+      },
+      "next": [
+        {
+          "if": "res.total==0",
+          "next": "none"
+        },
+        {
+          "if": "true",
+          "next": "list"
+        }
+      ]
+    },
+    "none": {
+      "type": "message",
+      "text_fa": "چیزی پیدا نکردم. کلمه دیگری امتحان کن.",
+      "buttons": [
+        [
+          {
+            "label_fa": "دوباره",
+            "next": "q"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "list": {
+      "type": "card",
+      "card": "SearchResults",
+      "text_fa": "{{res.total}} نتیجه: راهنما {{res.help}} · مشاور {{res.coach}} · مبحث {{res.nodes}} · برنامه {{res.plan}}",
+      "buttons": [
+        [
+          {
+            "label_fa": "جستجوی جدید",
+            "next": "q"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    }
+  },
+  "version": "1.0"
+}

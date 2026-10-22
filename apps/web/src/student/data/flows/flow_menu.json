@@ -1,0 +1,60 @@
+{
+  "id": "menu",
+  "title_fa": "منوی اصلی",
+  "entry": "m",
+  "nodes": {
+    "m": {
+      "type": "menu",
+      "text_fa": "سلام {{user.name}} 👋 چه کار کنیم؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "📝 ثبت تست سریع",
+            "flow": "log.quick"
+          },
+          {
+            "label_fa": "📅 امروز چی کار کنم؟",
+            "flow": "today"
+          }
+        ],
+        [
+          {
+            "label_fa": "🎯 آمادگی آزمون",
+            "flow": "exam.prep"
+          },
+          {
+            "label_fa": "🔁 مرور امروز",
+            "flow": "review"
+          }
+        ],
+        [
+          {
+            "label_fa": "📊 وضعیت من",
+            "flow": "status"
+          },
+          {
+            "label_fa": "🧭 مشاور مطالعه",
+            "flow": "coach"
+          }
+        ],
+        [
+          {
+            "label_fa": "🎁 پاداش و ماموریت",
+            "flow": "rewards"
+          },
+          {
+            "label_fa": "🔎 جستجو",
+            "flow": "search"
+          }
+        ],
+        [
+          {
+            "label_fa": "❓ راهنمای برنامه",
+            "flow": "help"
+          }
+        ]
+      ]
+    }
+  },
+  "version": "1.0"
+}

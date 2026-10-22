@@ -1,0 +1,105 @@
+{
+  "id": "strategy.selfreport",
+  "version": "1.0",
+  "construct": "Study strategy use",
+  "source": "SS custom (non-clinical, educational)",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "retrieval": "خودآزمایی",
+    "reread": "اتکا به دوباره‌خوانی",
+    "spacing": "فاصله‌گذاری",
+    "interleave": "مخلوط‌زنی",
+    "error": "تحلیل خطا",
+    "help": "کمک‌خواهی",
+    "elab": "خودتوضیحی"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "بعد از خواندن درسنامه، بدون نگاه کردن خودم را می‌آزمایم.",
+      "sub": "retrieval",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "بیشتر وقتم صرف دوباره‌خواندن جزوه می‌شود.",
+      "sub": "reread",
+      "key": 1
+    },
+    {
+      "n": 3,
+      "fa": "مباحث را در چند روز پخش می‌کنم، نه یک‌جا.",
+      "sub": "spacing",
+      "key": 1
+    },
+    {
+      "n": 4,
+      "fa": "شب امتحان بیشترین مطالعه را دارم.",
+      "sub": "spacing",
+      "key": -1
+    },
+    {
+      "n": 5,
+      "fa": "تست‌های مباحث مختلف را قاطی می‌زنم.",
+      "sub": "interleave",
+      "key": 1
+    },
+    {
+      "n": 6,
+      "fa": "فقط تست‌های یک مبحث را پشت هم می‌زنم.",
+      "sub": "interleave",
+      "key": -1
+    },
+    {
+      "n": 7,
+      "fa": "علت تست‌های غلطم را بررسی می‌کنم.",
+      "sub": "error",
+      "key": 1
+    },
+    {
+      "n": 8,
+      "fa": "بعد از تصحیح، فقط درصد را نگاه می‌کنم و می‌گذرم.",
+      "sub": "error",
+      "key": -1
+    },
+    {
+      "n": 9,
+      "fa": "وقتی چیزی را نمی‌فهمم از معلم یا دوستم می‌پرسم.",
+      "sub": "help",
+      "key": 1
+    },
+    {
+      "n": 10,
+      "fa": "خجالت می‌کشم سؤال بپرسم.",
+      "sub": "help",
+      "key": -1
+    },
+    {
+      "n": 11,
+      "fa": "برای فهمیدن، مطلب را برای خودم توضیح می‌دهم.",
+      "sub": "elab",
+      "key": 1
+    },
+    {
+      "n": 12,
+      "fa": "زیر مطالب خط می‌کشم و همین را مطالعه می‌دانم.",
+      "sub": "reread",
+      "key": 1
+    }
+  ]
+}

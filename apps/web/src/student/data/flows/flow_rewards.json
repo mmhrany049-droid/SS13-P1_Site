@@ -1,0 +1,126 @@
+{
+  "id": "rewards",
+  "title_fa": "پاداش",
+  "entry": "load",
+  "nodes": {
+    "load": {
+      "type": "action",
+      "action": {
+        "handler": "rewards.summary",
+        "saveAs": "r"
+      },
+      "next": "card"
+    },
+    "card": {
+      "type": "card",
+      "card": "RewardCard",
+      "text_fa": "سطح {{r.level}} · {{r.coins}} سکه · {{r.questsDone}}/{{r.questsTotal}} ماموریت",
+      "buttons": [
+        [
+          {
+            "label_fa": "ماموریت‌ها",
+            "next": "quests"
+          },
+          {
+            "label_fa": "فروشگاه",
+            "next": "shop"
+          }
+        ],
+        [
+          {
+            "label_fa": "عوض‌کردن یک ماموریت",
+            "next": "swap"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "quests": {
+      "type": "card",
+      "card": "QuestList",
+      "buttons": [
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "card"
+          }
+        ]
+      ]
+    },
+    "shop": {
+      "type": "ask",
+      "text_fa": "کدام را می‌خواهی؟",
+      "ask": {
+        "slot": "itemId",
+        "input": "choice",
+        "choicesFrom": "rewards.shopItems"
+      },
+      "next": "buy"
+    },
+    "buy": {
+      "type": "action",
+      "action": {
+        "handler": "rewards.redeem",
+        "args": {
+          "itemId": "{{itemId}}"
+        },
+        "saveAs": "b"
+      },
+      "next": [
+        {
+          "if": "b.ok",
+          "next": "bought"
+        },
+        {
+          "if": "true",
+          "next": "poor"
+        }
+      ]
+    },
+    "bought": {
+      "type": "message",
+      "text_fa": "نوش جانت 🎉 {{b.balance}} سکه باقی ماند.",
+      "buttons": [
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "poor": {
+      "type": "message",
+      "text_fa": "هنوز {{b.missing}} سکه کم داری. یک ماموریت امروز را تمام کن.",
+      "buttons": [
+        [
+          {
+            "label_fa": "ماموریت‌ها",
+            "next": "quests"
+          }
+        ]
+      ]
+    },
+    "swap": {
+      "type": "action",
+      "action": {
+        "handler": "quests.swapOne"
+      },
+      "next": "quests"
+    }
+  },
+  "version": "1.0"
+}

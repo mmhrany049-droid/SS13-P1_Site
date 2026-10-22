@@ -1,0 +1,55 @@
+{
+  "id": "selfefficacy.subject",
+  "version": "1.0",
+  "construct": "Academic self-efficacy",
+  "source": "SS custom (non-clinical, educational)",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "general": "خودکارآمدی کلی"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "مطمئنم اگر تلاش کنم، سخت‌ترین مباحث را هم یاد می‌گیرم.",
+      "sub": "general",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "وقتی تستی را بلد نیستم، فکر می‌کنم هیچ‌وقت یاد نمی‌گیرم.",
+      "sub": "general",
+      "key": -1
+    },
+    {
+      "n": 3,
+      "fa": "می‌توانم برای رسیدن به درصد هدفم برنامه‌ریزی کنم.",
+      "sub": "general",
+      "key": 1
+    },
+    {
+      "n": 4,
+      "fa": "بعد از یک آزمون بد، زود دوباره شروع می‌کنم.",
+      "sub": "general",
+      "key": 1
+    }
+  ],
+  "perSubjectItem": {
+    "fa": "چقدر مطمئنی در {{subject}} به درصد هدفت می‌رسی؟",
+    "scale": "0–100 slider"
+  }
+}

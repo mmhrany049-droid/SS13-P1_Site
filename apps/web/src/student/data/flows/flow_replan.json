@@ -1,0 +1,107 @@
+{
+  "id": "replan",
+  "title_fa": "امروز نرسیدم",
+  "entry": "load",
+  "nodes": {
+    "load": {
+      "type": "action",
+      "action": {
+        "handler": "plan.unfinishedToday",
+        "saveAs": "u"
+      },
+      "next": [
+        {
+          "if": "u.count==0",
+          "next": "none"
+        },
+        {
+          "if": "true",
+          "next": "opts"
+        }
+      ]
+    },
+    "none": {
+      "type": "message",
+      "text_fa": "کار ناتمامی نداری 👌",
+      "buttons": [
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "opts": {
+      "type": "menu",
+      "text_fa": "{{u.count}} کار ناتمام. چه کنیم؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "انتقال به فردا",
+            "set": {
+              "mode": "tomorrow"
+            },
+            "next": "propose"
+          }
+        ],
+        [
+          {
+            "label_fa": "پخش در ۳ روز آینده",
+            "set": {
+              "mode": "spread"
+            },
+            "next": "propose"
+          }
+        ],
+        [
+          {
+            "label_fa": "نصف‌کردن و انتقال",
+            "set": {
+              "mode": "halve"
+            },
+            "next": "propose"
+          }
+        ]
+      ]
+    },
+    "propose": {
+      "type": "action",
+      "action": {
+        "handler": "plan.proposeMoves",
+        "args": {
+          "mode": "{{mode}}"
+        },
+        "saveAs": "p"
+      },
+      "next": "confirm"
+    },
+    "confirm": {
+      "type": "card",
+      "card": "MoveProposalCard",
+      "text_fa": "پیش‌نویس جابه‌جایی آماده است. تأیید؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "تأیید",
+            "action": "plan.applyMoves:{{p.id}}",
+            "next": "ok"
+          },
+          {
+            "label_fa": "نه",
+            "next": "opts"
+          }
+        ]
+      ]
+    },
+    "ok": {
+      "type": "end",
+      "text_fa": "جابه‌جا شد. فردا از اولی شروع کن 💪"
+    }
+  },
+  "version": "1.0"
+}

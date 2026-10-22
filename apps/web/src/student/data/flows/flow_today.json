@@ -1,0 +1,143 @@
+{
+  "id": "today",
+  "title_fa": "امروز",
+  "entry": "energy",
+  "nodes": {
+    "energy": {
+      "type": "menu",
+      "text_fa": "انرژی‌ات الان چقدره؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "۱",
+            "set": {
+              "energy": "۱"
+            },
+            "next": "load"
+          },
+          {
+            "label_fa": "۲",
+            "set": {
+              "energy": "۲"
+            },
+            "next": "load"
+          },
+          {
+            "label_fa": "۳",
+            "set": {
+              "energy": "۳"
+            },
+            "next": "load"
+          },
+          {
+            "label_fa": "۴",
+            "set": {
+              "energy": "۴"
+            },
+            "next": "load"
+          },
+          {
+            "label_fa": "۵",
+            "set": {
+              "energy": "۵"
+            },
+            "next": "load"
+          }
+        ],
+        [
+          {
+            "label_fa": "رد شو",
+            "next": "load"
+          }
+        ]
+      ]
+    },
+    "load": {
+      "type": "action",
+      "action": {
+        "handler": "plan.today",
+        "args": {
+          "energy": "{{energy}}"
+        },
+        "saveAs": "t"
+      },
+      "next": [
+        {
+          "if": "t.items.length==0",
+          "next": "empty"
+        },
+        {
+          "if": "true",
+          "next": "list"
+        }
+      ]
+    },
+    "empty": {
+      "type": "message",
+      "text_fa": "برای امروز برنامه تأییدشده‌ای نداری. بسازیم؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "ساخت برنامه هفته",
+            "deepLink": "/planner?generate=1"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "list": {
+      "type": "card",
+      "card": "TodayCard",
+      "text_fa": "{{t.count}} کار امروز · {{t.reviews}} مرور سررسید",
+      "buttons": [
+        [
+          {
+            "label_fa": "▶️ شروع اولی",
+            "action": "activity.start:{{t.items[0].id}}"
+          }
+        ],
+        [
+          {
+            "label_fa": "کوچکش کن",
+            "next": "shrink"
+          },
+          {
+            "label_fa": "جابه‌جا کن",
+            "flow": "replan"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "shrink": {
+      "type": "action",
+      "action": {
+        "handler": "activity.shrink",
+        "args": {
+          "id": "{{t.items[0].id}}",
+          "factor": 0.5
+        }
+      },
+      "next": "list"
+    }
+  },
+  "version": "1.0"
+}

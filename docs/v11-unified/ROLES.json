@@ -1,0 +1,9 @@
+{
+  "student": { "label": "دانش‌آموز", "surface": "ss", "permissions": ["self.read", "self.study", "self.exam.take", "self.video.watch"] },
+  "teacher": { "label": "معلم", "surface": "workspace", "permissions": ["own.classes", "own.subject.books", "exam.create", "video.publish", "student.progress.read"] },
+  "teacher_admin": { "label": "ادمین معلم", "surface": "workspace", "permissions": ["teacher.team.manage", "subject.content.manage", "reports.read"] },
+  "institute_admin": { "label": "ادمین آموزشگاه", "surface": "workspace", "permissions": ["institute.manage", "classes.manage", "enrollment.manage", "subscriptions.manage"] },
+  "school_admin": { "label": "ادمین مدرسه", "surface": "workspace", "permissions": ["school.manage", "academic_year.manage", "classes.manage", "reports.read"] },
+  "owner": { "label": "رئیس", "surface": "workspace", "permissions": ["organizations.manage", "billing.manage", "roles.manage", "all.reports"] },
+  "owner_admin": { "label": "ادمین رئیس", "surface": "workspace", "permissions": ["users.manage", "settings.manage", "audit.read"] }
+}

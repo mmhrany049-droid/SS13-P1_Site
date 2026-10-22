@@ -1,0 +1,76 @@
+{
+  "id": "testanxiety.short",
+  "version": "1.0",
+  "construct": "Test anxiety (worry/emotionality), non-clinical",
+  "source": "SS custom (non-clinical, educational); inspired by worry/emotionality model (Liebert & Morris 1967), not a clinical scale",
+  "license": "own",
+  "translationStatus": "native-fa, unvalidated (pilot needed)",
+  "intendedUse": "self-insight and adaptation priors only",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels_fa": [
+      "اصلاً",
+      "کم",
+      "تا حدی",
+      "زیاد",
+      "کاملاً"
+    ]
+  },
+  "scoring": "per subscale mean of keyed items (reverse r→6−r); score0to100=(mean−1)/4×100; band=±1.96×SEM, SEM=SD_default(18)×sqrt(1−alpha)",
+  "alphaDefault": 0.7,
+  "subscales": {
+    "worry": "نگرانی",
+    "emotion": "هیجان بدنی"
+  },
+  "items": [
+    {
+      "n": 1,
+      "fa": "قبل از آزمون مدام فکر می‌کنم خراب می‌کنم.",
+      "sub": "worry",
+      "key": 1
+    },
+    {
+      "n": 2,
+      "fa": "سر جلسه آزمون قلبم تند می‌زند یا دستم می‌لرزد.",
+      "sub": "emotion",
+      "key": 1
+    },
+    {
+      "n": 3,
+      "fa": "سر آزمون چیزهایی را که بلد بودم یادم می‌رود.",
+      "sub": "worry",
+      "key": 1
+    },
+    {
+      "n": 4,
+      "fa": "شب قبل از آزمون خوب می‌خوابم.",
+      "sub": "emotion",
+      "key": -1
+    },
+    {
+      "n": 5,
+      "fa": "به نتیجه بقیه فکر می‌کنم و حواسم پرت می‌شود.",
+      "sub": "worry",
+      "key": 1
+    },
+    {
+      "n": 6,
+      "fa": "سر جلسه احساس آرامش دارم.",
+      "sub": "emotion",
+      "key": -1
+    },
+    {
+      "n": 7,
+      "fa": "بعد از آزمون مدت زیادی به اشتباه‌هایم فکر می‌کنم.",
+      "sub": "worry",
+      "key": 1
+    },
+    {
+      "n": 8,
+      "fa": "وقتی وقت آزمون کم می‌شود دستپاچه می‌شوم.",
+      "sub": "emotion",
+      "key": 1
+    }
+  ]
+}

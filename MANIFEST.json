@@ -1,0 +1,813 @@
+{
+  "version": "12.0.0",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "65628b909c88e0ace93238cab2deb31689d9aa5c13d9687a60b0176739f1528b"
+    },
+    {
+      "path": "IMPLEMENTATION_STATUS.md",
+      "sha256": "67d02e8daa864ef4ce5f07d6ba84f63224853e1f86122c410f9ab19119b1adbc"
+    },
+    {
+      "path": "README_FA.md",
+      "sha256": "fc6f85031416280a4078a7d7bd65ffb5dc4cd9726d453aafa437f8b2c14bb294"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "sha256": "350cd353b19c45907e16ec9dc49c8212a27417900102907a9c1b0c11fe72bf0b"
+    },
+    {
+      "path": "apps/api/package.json",
+      "sha256": "67b736b5c728413eefe0d4001cf4f15aa3ec356acf8e003c4f5446f064e724c0"
+    },
+    {
+      "path": "apps/api/src/app.mjs",
+      "sha256": "02fd10ed988323fdee76de37062841800ad64c4bdb6f4ee2041ea4a52e6aec0c"
+    },
+    {
+      "path": "apps/api/src/env.mjs",
+      "sha256": "e43c6d0c37a5b36d844352c20b8bd0e3b2bf007244c05213b706e5fb2bd21efb"
+    },
+    {
+      "path": "apps/api/src/http.mjs",
+      "sha256": "e0d6800d6e4908e9a306b13dbd42584b90beb8c29498aca5f802b1a96a239368"
+    },
+    {
+      "path": "apps/api/src/identity.mjs",
+      "sha256": "3b3397422b8824cf969c488a564793bd89609c1c1b0e88d7c61e04a47c897b73"
+    },
+    {
+      "path": "apps/api/src/import/legacy.mjs",
+      "sha256": "e565f566c3fc2e781ebc1b93164ca39102d33bae23e654e4a1f920b5a36415a6"
+    },
+    {
+      "path": "apps/api/src/legacy/db.mjs",
+      "sha256": "d6f6a9be1b1404398fe437c27ee397d99c4fef6ca5aa34b109a82fdeefd94d43"
+    },
+    {
+      "path": "apps/api/src/legacy/index.mjs",
+      "sha256": "55588a6a4583780fc6228a781e52b8eac71bcc7e0d90593d9d7cd1f8f9cf47df"
+    },
+    {
+      "path": "apps/api/src/legacy/mail.mjs",
+      "sha256": "c9fefc35fb3b511aa49d6af5186b9f351746f50efeaf4aeea3c634181cb70842"
+    },
+    {
+      "path": "apps/api/src/legacy/proxy.mjs",
+      "sha256": "d9827b09f2092e637973a352c7946cce5094a2c79bccf69997f84b6985fc922c"
+    },
+    {
+      "path": "apps/api/src/legacy/telegram.mjs",
+      "sha256": "aa08807e7c8108593eb4ce7cd497d37be23278f725d404d7e1ffe02da92dc6aa"
+    },
+    {
+      "path": "apps/api/src/server.mjs",
+      "sha256": "20e95c5375be1aa03666f2ce1af442910bd25659844c6d9e3c41a4112ca61662"
+    },
+    {
+      "path": "apps/web/dist/assets/Vazirmatn-L5BHTJ6L.woff2",
+      "sha256": "6c34f506440ba7109cab2399e7ea4e4f76267320d42b49e23b9ccd39083540f1"
+    },
+    {
+      "path": "apps/web/dist/assets/app-T73ZWQER.css",
+      "sha256": "12ff8ed848f50a8c79bc90f46b8976abedbfac075d7f82d3f3f4a094c625fced"
+    },
+    {
+      "path": "apps/web/dist/assets/app-WR7WBSPF.js",
+      "sha256": "dcb523cf96a9f2e644281e0f141bfdefbb58ef3e2a78452f132afa2c67a87d35"
+    },
+    {
+      "path": "apps/web/dist/assets/c-IEFCAIID.js",
+      "sha256": "19a9ab571ed350d360bc0527fb629143b13b2f1b32a33c783bccee5879886746"
+    },
+    {
+      "path": "apps/web/dist/assets/c-K6NBJ4BB.js",
+      "sha256": "06e3182bc89ffbdea01af58eadcd017748a0d417c2628fb2cf06a1d8d1300b8a"
+    },
+    {
+      "path": "apps/web/dist/assets/c-N4LG4UK6.js",
+      "sha256": "c9f552600ca693dc6c2b4c329391def85f42691a0173ad5b25bc953b651463d4"
+    },
+    {
+      "path": "apps/web/dist/assets/c-SDLUUUPB.js",
+      "sha256": "0d789d450b02155a4956050f4f0487711ef8a0e187646a6cf4ae97d1d806e981"
+    },
+    {
+      "path": "apps/web/dist/config.json",
+      "sha256": "f29760883c40ce0ebf5c68aec77d9eb0c04f1d36594853f8882fa3e20d182a8a"
+    },
+    {
+      "path": "apps/web/dist/icon.svg",
+      "sha256": "3ccc5bb91142902e6034b233e5da60496dcaad3d10e190bded79eb6cc5d5bb0a"
+    },
+    {
+      "path": "apps/web/dist/index.html",
+      "sha256": "8727bb89daba1acbb7221c7043022e068a2af9fa3df9ab2a8d21e9d21c89d865"
+    },
+    {
+      "path": "apps/web/dist/manifest.webmanifest",
+      "sha256": "a22375b1d513c3d30d30caaaf85f8965a1ee56e18b45a1c602ec87a02790d663"
+    },
+    {
+      "path": "apps/web/dist/sw.js",
+      "sha256": "9c65d88217f7c1b55455102d033dccb49624a75ffb86e456674076ef7f2afc91"
+    },
+    {
+      "path": "apps/web/index.html",
+      "sha256": "3ad102496da929ff77d51ba97c370cc19d6c81d599bf453dc05e57833edf7a32"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "2abd55a0000f899191c420ac53eba5dd262714016dd73d5fb57277da6961a1d1"
+    },
+    {
+      "path": "apps/web/public/config.json",
+      "sha256": "f29760883c40ce0ebf5c68aec77d9eb0c04f1d36594853f8882fa3e20d182a8a"
+    },
+    {
+      "path": "apps/web/public/icon.svg",
+      "sha256": "3ccc5bb91142902e6034b233e5da60496dcaad3d10e190bded79eb6cc5d5bb0a"
+    },
+    {
+      "path": "apps/web/public/manifest.webmanifest",
+      "sha256": "a22375b1d513c3d30d30caaaf85f8965a1ee56e18b45a1c602ec87a02790d663"
+    },
+    {
+      "path": "apps/web/public/sw.js",
+      "sha256": "9c65d88217f7c1b55455102d033dccb49624a75ffb86e456674076ef7f2afc91"
+    },
+    {
+      "path": "apps/web/src/app.css",
+      "sha256": "1d6e4007bed776d6e051663c3ea7443371bd9e2fbed5be680bcf1b594312e2be"
+    },
+    {
+      "path": "apps/web/src/main.jsx",
+      "sha256": "e6a7d68f421aa36c98fe57812d394ace222eb91c048988b46f522ee897f2adfb"
+    },
+    {
+      "path": "apps/web/src/shell/Auth.jsx",
+      "sha256": "83bde6eb997a89b0fd530bd21f6fc3614c7c9c9c83e3896fd374962173a0d475"
+    },
+    {
+      "path": "apps/web/src/shell/Root.jsx",
+      "sha256": "42d04b3472dcb796844823c84ff8fa6e8071cdc5d4beeef605cec578a07d55f3"
+    },
+    {
+      "path": "apps/web/src/shell/Sheet.jsx",
+      "sha256": "8e96b8f5c653eccb7f72e71cf538a7a055c9c3f7892ba693c8388153c5e3881e"
+    },
+    {
+      "path": "apps/web/src/shell/api.js",
+      "sha256": "4c54970213b1c9b908682475476902ff83d6c3b50788c7330a993917e48bb924"
+    },
+    {
+      "path": "apps/web/src/shell/outbox.js",
+      "sha256": "3af5bb9a3ac9dc18b5c035e76bd3dd873b372f8701f7fdc0ce959e85dd9edbbf"
+    },
+    {
+      "path": "apps/web/src/student/AccountCard.jsx",
+      "sha256": "2359dc1324a226c95db61a875ff39d780701b2813330a5f1d2c16d5e89f61272"
+    },
+    {
+      "path": "apps/web/src/student/Analytics.jsx",
+      "sha256": "61523c5f04ba336729d815bc69db4d6831177b2984b2600bd21a19a7d66efe9a"
+    },
+    {
+      "path": "apps/web/src/student/App.jsx",
+      "sha256": "6723f5cbb57cdb4b3822068666238ca92e0038119c4facf3237027d20b7b1e27"
+    },
+    {
+      "path": "apps/web/src/student/Assistant.jsx",
+      "sha256": "5bb5fabb93eb870fd73dfdc3cf6b1a38cf14d347ef19ed2d58a38b8620741ac2"
+    },
+    {
+      "path": "apps/web/src/student/AssistantWidget.jsx",
+      "sha256": "602be7696bf7a59eb536f6eb85d9efb680f5e066ca5dae8cc9f0647ede696875"
+    },
+    {
+      "path": "apps/web/src/student/Auth.jsx",
+      "sha256": "061b15f6839d4ff56ce09a7d1152b1dd2055aaf38a4a5cfb792696a5dd942a96"
+    },
+    {
+      "path": "apps/web/src/student/Books.jsx",
+      "sha256": "45f6398d35c24449c1e56a7c8c66caf852bc40f3eb9c172fab5dfacceeabfdb1"
+    },
+    {
+      "path": "apps/web/src/student/Days.jsx",
+      "sha256": "98e78931cce4a80a456e20fca2326943aa08b8edbc2897d169f68de974e840f7"
+    },
+    {
+      "path": "apps/web/src/student/Exam.jsx",
+      "sha256": "39864d82473e3d7d18f00cf98cfaa39c38320ece94b1181eeed289f8e0fc2db8"
+    },
+    {
+      "path": "apps/web/src/student/Habits.jsx",
+      "sha256": "7644275a58ef73d63a0f55fad533759e9345c16d2fc1849e4b0176855c3b4a32"
+    },
+    {
+      "path": "apps/web/src/student/History.jsx",
+      "sha256": "3c136f4a5eed597c71e233256459a2792e7721ed89646d75a43afc1e1987c6a1"
+    },
+    {
+      "path": "apps/web/src/student/Home.jsx",
+      "sha256": "79106707e3b27ca2b3949f1b66266be6b04fa84387054b1d33cd4391f5aa366d"
+    },
+    {
+      "path": "apps/web/src/student/Keys.jsx",
+      "sha256": "815ed6399582cd90ee4a72b2287453fcaef8b8c5e7a4e1018fce50068b2178f9"
+    },
+    {
+      "path": "apps/web/src/student/Login.jsx",
+      "sha256": "440bbca5d1bcaacbf5d0c49161980073edc1697c3f24023f168cc155e81d884d"
+    },
+    {
+      "path": "apps/web/src/student/More.jsx",
+      "sha256": "234d06d2c8016ff9cc59f75d2523ea2509e70e2863b1f56f2c0920602817e3ef"
+    },
+    {
+      "path": "apps/web/src/student/Network.jsx",
+      "sha256": "28074d757a6dcc4c80e1fcceb6c91b1785e1541a0e2dc834e54a7f235f197c53"
+    },
+    {
+      "path": "apps/web/src/student/Onboarding.jsx",
+      "sha256": "e8aef0e185929e1051417d019eabc0fb36ccdefbcd2b376541cced8dc671de67"
+    },
+    {
+      "path": "apps/web/src/student/Planner.jsx",
+      "sha256": "d70180381681a64a4802e690628bd423e4158944ac771d25ee3e9e472df460f6"
+    },
+    {
+      "path": "apps/web/src/student/Practice.jsx",
+      "sha256": "98f042637879de818eece78e1c1c4547352ef55e44823384824abb44940b6b12"
+    },
+    {
+      "path": "apps/web/src/student/Profile.jsx",
+      "sha256": "562f1816b81417e8aa97571e38c08d49cd6a79e0be8a188b026aceb49ce09d32"
+    },
+    {
+      "path": "apps/web/src/student/Review.jsx",
+      "sha256": "31108474c0e2ba4ed9abb80f25aaf6a5689f27eb8400139563aaea08259c4714"
+    },
+    {
+      "path": "apps/web/src/student/Rewards.jsx",
+      "sha256": "d3b35e72b2a7e1d07846ae022c0b4d917902e4743d460379a5b09d4c2d41f505"
+    },
+    {
+      "path": "apps/web/src/student/Settings.jsx",
+      "sha256": "bfd0bba56d2356bfd68d07ad4524a635f4a033abae3ae14d602b13cc91d24322"
+    },
+    {
+      "path": "apps/web/src/student/Tasks.jsx",
+      "sha256": "9a4e1d5781144c65cf5f8acb33aa887173804f807996941ab27e02bf1cc831c0"
+    },
+    {
+      "path": "apps/web/src/student/Textbooks.jsx",
+      "sha256": "abafbb40350ad8caa82be6a8eefeb69d98f85b8410d21499e04fe4076bddef8a"
+    },
+    {
+      "path": "apps/web/src/student/Today.jsx",
+      "sha256": "24cfe493faab5c4143ac38ed5dcd02c1d0672d1a14b75611752e4e352a91d9e5"
+    },
+    {
+      "path": "apps/web/src/student/Topics.jsx",
+      "sha256": "2084ba9ebbefa54a317573a0be3d8c1cbca8b4a05ead834d056fb655da5fc2e8"
+    },
+    {
+      "path": "apps/web/src/student/account.js",
+      "sha256": "08cd3d44ccadaca9fa618258d164fd5dd59cf39d07677392668cd2848fc278bd"
+    },
+    {
+      "path": "apps/web/src/student/assess.js",
+      "sha256": "924fe4322a28769e9ca94d1df85f8ba6a10cd0f5ebf2f38b7ba6280e6bc32dd3"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_coach.json",
+      "sha256": "f209592db643d2a248410e027ff2ff8924226e9cba793a2810ba0384c4213ba6"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_exam_prep.json",
+      "sha256": "ad19e23e680d9a2257f05d3f06475f17561594fd0cb749a3b795ca70efc32ced"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_help.json",
+      "sha256": "8c998b10b90969fe951eab03793a61684708ce09ee8a891839306f2756964c6d"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_log_quick.json",
+      "sha256": "e982c5a7eb392a828923462e5959011448de3676d4f085d4cf90813394544047"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_menu.json",
+      "sha256": "e425090a16c7af2ac48cb2f48c698e42c0c2ca44c6dd60805fe1b9bd5fa66dc4"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_onboarding.json",
+      "sha256": "7038cba223eeb22bdd86d593e8036c3b07df2a40592cfd4ec21331014e83a1d1"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_procrastination.json",
+      "sha256": "0f3a6b76f33066c82572680987897e96891d316407e972e3639d2c29b67173fa"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_replan.json",
+      "sha256": "3bec2bab356eb4895ba5df2f7c5cfc443a2805d9843e2fca6cd23950cbd9650e"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_review.json",
+      "sha256": "de1f49c00a6fb57b9c9a232d20f347a5c910150fa53dbbcefa9ccfe6721a0c6a"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_rewards.json",
+      "sha256": "caf78fdf91a31a1ae78bdaf0f0e9dc349d47cf8288550f55dfbc06d0d8ef4177"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_search.json",
+      "sha256": "f49d962e07de7ab3f98db3e5f4d92d1fa45b93b6b578e2461da7c27ab8d94f4a"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_status.json",
+      "sha256": "3d0fffa731ba6f329787aaa828844a7a218d2c003ad02e45e3cc624ddcdfa8ff"
+    },
+    {
+      "path": "apps/web/src/student/data/flows/flow_today.json",
+      "sha256": "5041fc09d76650efeb28ad65315af2a1767032b8abdfb4a47f6f00fdde304003"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/chronotype_custom.json",
+      "sha256": "6295709ac320b2df74e9d2bb36b7d42b1616032ba26d783a0173c72f7e159a6f"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/motivation_sdt.json",
+      "sha256": "b5590f919db158d13a185ce22b803cd03fb9bbc42d0cb8bca51eb97e5a9d0cf0"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/procrastination_triggers.json",
+      "sha256": "07d1ed0822ff34ce5c2ee32b38582c72bbd969f05888876e941f6a3c006f2933"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/selfcontrol_study.json",
+      "sha256": "47c13ee79879c9c54f4833f94f694c39c49d3350568a27577bc70679dc6bab54"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/selfefficacy_subject.json",
+      "sha256": "1a9a00ae4212b3400deb77e253a38725c30a4276619be27b297dbd09f6a19091"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/session_preference.json",
+      "sha256": "bd7620db5dcfad3064b6668d0fceb545660b66a6f0deaaa70e6db17d1082decf"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/strategy_selfreport.json",
+      "sha256": "a260949559c29aef280ed2cd26dc81f688ab08df2962f14b5af88bb92e4b25d6"
+    },
+    {
+      "path": "apps/web/src/student/data/psy/testanxiety_short.json",
+      "sha256": "b928bda131b77fc5b2e7e9355481f2be29fdf1f46bc26e67778e286fa76a18c4"
+    },
+    {
+      "path": "apps/web/src/student/data/safetyLexicon.fa.json",
+      "sha256": "f985fa696f16dab50b3dc971c0380777e197e45f547dcd705a12142bdde5e4b9"
+    },
+    {
+      "path": "apps/web/src/student/dossier.js",
+      "sha256": "b79203194ceacac2fac6689c134b3d9dbe61da738100082a3b8db683beba54d6"
+    },
+    {
+      "path": "apps/web/src/student/exchange.js",
+      "sha256": "d02f913c1c1d80fb3b5d014fd9099a5475e216e2c19c5cff51cdf627c7dcdd6e"
+    },
+    {
+      "path": "apps/web/src/student/fonts/Vazirmatn.woff2",
+      "sha256": "6c34f506440ba7109cab2399e7ea4e4f76267320d42b49e23b9ccd39083540f1"
+    },
+    {
+      "path": "apps/web/src/student/grow.js",
+      "sha256": "a8726927db1d172623377fd413e0927ca4607dc929c12ea5a242e8150a435c6f"
+    },
+    {
+      "path": "apps/web/src/student/guide.js",
+      "sha256": "0e5fd67ec40d034d37c627c863b1aa1aff58a08414555a96bdc4c24291c8794c"
+    },
+    {
+      "path": "apps/web/src/student/index.css",
+      "sha256": "b70db75f3ecbe2eea5e31ba8b8650da7f2056d4c1ff21a42f2933756edc10a74"
+    },
+    {
+      "path": "apps/web/src/student/instruments.js",
+      "sha256": "8a330a12d385a044fec915ebbabf3192b8efde51443dd00a8b985e5687b0d8ad"
+    },
+    {
+      "path": "apps/web/src/student/ipip.json",
+      "sha256": "1d784e3319b4695a67a0432e40ede57ef9ff8055cb086129e56602f01770f3ea"
+    },
+    {
+      "path": "apps/web/src/student/media.js",
+      "sha256": "6fe6f4335a0423889c4420d0f27dc2a5af78696b7e569dfcc8ca65b93e733461"
+    },
+    {
+      "path": "apps/web/src/student/rewards.js",
+      "sha256": "da095d0bbc94847a32845d05cd4051cd769852fbc489b87fc21c0bf43f371245"
+    },
+    {
+      "path": "apps/web/src/student/summary.js",
+      "sha256": "bc3bc5a673f59616cc9c59002c886930a91240c9c34a2d29f0d581b626e25915"
+    },
+    {
+      "path": "apps/web/src/student/sync/client.js",
+      "sha256": "74306052c71628ad18821e165526e9c0762c1cacd1c87512a56e098d189a5d3c"
+    },
+    {
+      "path": "apps/web/src/workspace/Account.jsx",
+      "sha256": "6e1fc6fd5ad11c3c8629bd8d51b347e9ddbe9af6154d352c228995e87329a839"
+    },
+    {
+      "path": "apps/web/src/workspace/App.jsx",
+      "sha256": "b44bae0b5f64d83203dea5335de73f9420299c07b1da8316caf6f1aa4b2c4a41"
+    },
+    {
+      "path": "apps/web/src/workspace/Assistant.jsx",
+      "sha256": "b9c9cb57b54dd07bc540815d90461a1d3b4185cc3541842620c37fd727447665"
+    },
+    {
+      "path": "apps/web/src/workspace/Audit.jsx",
+      "sha256": "ba6fb835b7dfb4a38ca8ddb7e7d1f7732715d89b8f2b76723e4379fef0ff0e32"
+    },
+    {
+      "path": "apps/web/src/workspace/Auth.jsx",
+      "sha256": "6ba0d231c325a8bf8d7d231bc77c85fb03efbb29eff99f0f04862a139bed5551"
+    },
+    {
+      "path": "apps/web/src/workspace/Desk.jsx",
+      "sha256": "44d0414afbaca29b30ae87393f8f1649219392758db4e83d719901d0f762d95f"
+    },
+    {
+      "path": "apps/web/src/workspace/HubPages.jsx",
+      "sha256": "ccfa792b0f3d33a2b76750e3aef2addfcb1800bbe485e7b9d1383aedd446245d"
+    },
+    {
+      "path": "apps/web/src/workspace/Mail.jsx",
+      "sha256": "1947919e6f713080108b58e1a175e82fd5ee91cb5182450723107ee77d9e3120"
+    },
+    {
+      "path": "apps/web/src/workspace/Messages.jsx",
+      "sha256": "96b7255558a41a09595a01c3844a9b2ec6bd4bf7e032708f7f5de13771b0b6fd"
+    },
+    {
+      "path": "apps/web/src/workspace/Settings.jsx",
+      "sha256": "a926c74b9de3fbcbda83901e6aadfcb401fd65fe54ce2128b47df2755839d3c5"
+    },
+    {
+      "path": "apps/web/src/workspace/Students.jsx",
+      "sha256": "3d3a196704b9d93475fea650012c2ff4ca90937da27e0fadcfc3b6abb98a2723"
+    },
+    {
+      "path": "apps/web/src/workspace/Team.jsx",
+      "sha256": "f37bdce3814e07d5c7160c1fd683d873b8c7806abc46b8fab162e0f2ba457fd7"
+    },
+    {
+      "path": "apps/web/src/workspace/Telegram.jsx",
+      "sha256": "3208dcb68293387ea0c1fc14cfdc61110378bd7064d49890b342547dd11b3b16"
+    },
+    {
+      "path": "apps/web/src/workspace/V12Pages.jsx",
+      "sha256": "887d408b93f7efc46d71d5f79575e975d278fb647b0af9c00ca923ea47a5d6dc"
+    },
+    {
+      "path": "apps/web/src/workspace/adminApi.js",
+      "sha256": "beba526a1e4827666bc56116c609a8afa59db67cb716f656727b1d77973a2caf"
+    },
+    {
+      "path": "apps/web/src/workspace/fonts/Vazirmatn.woff2",
+      "sha256": "6c34f506440ba7109cab2399e7ea4e4f76267320d42b49e23b9ccd39083540f1"
+    },
+    {
+      "path": "apps/web/src/workspace/hubStore.js",
+      "sha256": "79161ee4924c25001664dd033b1c5ac2b33004fd1a6945f1f83c6cd42aa60210"
+    },
+    {
+      "path": "apps/web/src/workspace/index.css",
+      "sha256": "10d77b792dede70636bef0d88eb354cbba4725658e4ea119b3c98a567559f09f"
+    },
+    {
+      "path": "apps/web/src/workspace/perms.js",
+      "sha256": "9babb9f605c64ea00e120174c214eccb0bea9da997e48208738b9074265cb1bf"
+    },
+    {
+      "path": "apps/web/src/workspace/theme.js",
+      "sha256": "292c84e4788627ee433ea92ec5a01a6536e63f66559e8676d6dec8b8ce734aee"
+    },
+    {
+      "path": "apps/web/tests/engine.test.js",
+      "sha256": "195000b8194509275e3ace59ac09765f149d0368c39c824c01d83b8501cbea2e"
+    },
+    {
+      "path": "apps/web/tests/hubStore.js",
+      "sha256": "d35820f81cc158b74a89bbed27a794aa5293badb1d2f8f1bb1e0001e4ff9b5b0"
+    },
+    {
+      "path": "apps/web/tests/setup.js",
+      "sha256": "0d7cae86a2b2e10d8e40dc97e83fe8f5b0ca64e767e00be74789bd470c2d703c"
+    },
+    {
+      "path": "apps/web/tests/store.test.js",
+      "sha256": "41308f6a36ba843fc1068371c7f5779c5b450fb21bb5c281ab0955edfc10d844"
+    },
+    {
+      "path": "apps/web/tests/v6.test.js",
+      "sha256": "d484336dd57390f57a656002b0ff92cf3b76f394966b191aeb92672887154c7a"
+    },
+    {
+      "path": "docs/ASSUMPTIONS.md",
+      "sha256": "13d2973c1551fdb0ba353a8e6c19c223ab3dac08a2208b88eb44b2fb0724d053"
+    },
+    {
+      "path": "docs/CHANGELOG.md",
+      "sha256": "09eb24121449ea9d1b0403eefee0a6452c1bc201cbb7614ef666499d9b0268ff"
+    },
+    {
+      "path": "docs/V11_DATABASE.sql",
+      "sha256": "978ac8c5ec7ccd743124ab9bd1a39fa0ceeaa794429283a12cbc135f24e94a27"
+    },
+    {
+      "path": "docs/V11_PRODUCT_PLAN.md",
+      "sha256": "d1fb6f014493aa27b70629056480c764cac63509b7dc34998dada9ae64ff9402"
+    },
+    {
+      "path": "docs/V11_ROLE_MATRIX.md",
+      "sha256": "402939f08ee4454038d6b54ab5fb43ea2472653b315153d7749ad9d2f2da6cad"
+    },
+    {
+      "path": "docs/v11-unified/README_FA.md",
+      "sha256": "65cb9b97d654f56844b3edc5e4390328404250a46d8506979917777c0451f87c"
+    },
+    {
+      "path": "docs/v11-unified/ROLES.json",
+      "sha256": "3781b9bde2f20b029eea947b852a35a69490a17cdda3e78101bdd6ded9aa76be"
+    },
+    {
+      "path": "docs/v11-unified/ROUTE_MAP.md",
+      "sha256": "8a306acba3f24d2d3043e975f2bc6a055175a3c1035218705044db6a4ee39fa4"
+    },
+    {
+      "path": "docs/v11-unified/SERVER_CONTRACT.md",
+      "sha256": "23b8e4a5d551ec5e9beac077257a0d5e2fc2a7fcfa121c979371d1c197747624"
+    },
+    {
+      "path": "docs/v11-unified/UnifiedLogin.jsx",
+      "sha256": "ffbb27e60d3fcc8829fba409955afad73a15c7460b722f2f72c13a762ed62b8c"
+    },
+    {
+      "path": "docs/v11-unified/unified.css",
+      "sha256": "801a71fe665463001fc00b3f1113a00187d1bc1a594f03c1913e994376a7c723"
+    },
+    {
+      "path": "migrations/001_core.mjs",
+      "sha256": "f845658d99669c5dc03ecd3c7a67e5edbf90d10cef90d95a6b096811e7023c01"
+    },
+    {
+      "path": "migrations/002_event_indexes.mjs",
+      "sha256": "0f6f8a253eb24b330ca771556a92c2a19a5168eb7c306c316d4900b9337ef8ae"
+    },
+    {
+      "path": "migrations/index.mjs",
+      "sha256": "e304e97c3caf7c940307be00777cf96a944d8fdc58b0bcc4db73cd6370514237"
+    },
+    {
+      "path": "package.json",
+      "sha256": "3673a447ca0b0e2ffd27b4783ea1c53c8faef69a3dff5daa1d619e48cbec89b3"
+    },
+    {
+      "path": "packages/auth/package.json",
+      "sha256": "70a33574fc2d8d4dcd88bad9d5d92e51fce0f3022e1ed69e1a33511963e75809"
+    },
+    {
+      "path": "packages/auth/src/index.mjs",
+      "sha256": "47c9ab197532ee0fd71b4164d1f48b461be75591001ff20bc40ee76d54be1738"
+    },
+    {
+      "path": "packages/auth/src/policy.mjs",
+      "sha256": "0126cb28eb54462eab6c3ffaa57079e3a0f8db9c5a3aba9d6b0a86707275010b"
+    },
+    {
+      "path": "packages/auth/src/security.mjs",
+      "sha256": "b7a196c640511b06da58b544dbd9e92c875adeb9c1854ca722fb725098048f75"
+    },
+    {
+      "path": "packages/auth/src/sessions.mjs",
+      "sha256": "c90bee9e9782ca7ad4995c098b2483ff9743aa0d05227c061c9300e7d0246608"
+    },
+    {
+      "path": "packages/auth/src/signing.mjs",
+      "sha256": "c026f98bb5cc29e63ec7c8de7ba090bf1c58dbfa882056755ddca96f7e246044"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "sha256": "6fd8f88b0e1db153209ef2bba316cbfbca2bec77e074d1d4f6e95911e80794a6"
+    },
+    {
+      "path": "packages/contracts/src/errors.fa.mjs",
+      "sha256": "1444e6bd2791aa58e320ab3674d2229dbb8d13635196bed4cadbda54debca75f"
+    },
+    {
+      "path": "packages/contracts/src/events.mjs",
+      "sha256": "0ddcc01be8dfcf834b2dabc1d5a6231c22dc2a2e10a807959c9f3cd20a1bed09"
+    },
+    {
+      "path": "packages/contracts/src/flags.mjs",
+      "sha256": "cc99b5b5f1a00dd96a095ae602d85a52576713071fca47fe1b820132d4977bbb"
+    },
+    {
+      "path": "packages/contracts/src/index.mjs",
+      "sha256": "ec13f1ea9cabe59a27841a0f63db24f733d1fe7d778b463231e1c985d0bb1cb1"
+    },
+    {
+      "path": "packages/contracts/src/roles.mjs",
+      "sha256": "9f2c7d3322b9d1ca62aa836d1b75f2b05050e8b5d1c46ec178336575c1c58600"
+    },
+    {
+      "path": "packages/contracts/src/validate.mjs",
+      "sha256": "683a4d0e7529b68493e1910bf00b418b056250708ce5b3c857cfa2f61da1c75d"
+    },
+    {
+      "path": "packages/domain/package.json",
+      "sha256": "12652fbd99fd3e2ef1ec0b17bafe660b8fb5c5c783887d6bf9c3292134194795"
+    },
+    {
+      "path": "packages/domain/src/book.js",
+      "sha256": "87be45288564ad4092b0486de8d48d47b692f5b2895759121491005a16f29ab9"
+    },
+    {
+      "path": "packages/domain/src/brain.js",
+      "sha256": "db5b7be20008df834d3e887c4f0f4b163082c05a617fa551455d22324cf40c2f"
+    },
+    {
+      "path": "packages/domain/src/capacity.js",
+      "sha256": "59a7411d80ff14650fc0a17ef8bbb6819a7653996df4c363dc49ebd8f5794af8"
+    },
+    {
+      "path": "packages/domain/src/curriculum.js",
+      "sha256": "b03ddf39a584ae6a22c1bf50ad5e5914d062a65f8d30e3f03df4e903707bdf63"
+    },
+    {
+      "path": "packages/domain/src/data/curriculum/catalog.json",
+      "sha256": "12259d1239a96dcf66fa738d8c6f10d10b7412ca88d8c5a62f52223e8ec5cc36"
+    },
+    {
+      "path": "packages/domain/src/data/curriculum/links.json",
+      "sha256": "a9835ca98cf7bd017b7a08837f3cb204515f8fe05ce34d6313a5d1ebae5c8b41"
+    },
+    {
+      "path": "packages/domain/src/dates.mjs",
+      "sha256": "379c130c59a1cc84013b792082086b35ace64d6e804fefcc455c23a40453e011"
+    },
+    {
+      "path": "packages/domain/src/engine.js",
+      "sha256": "370a4d8566c8768b504aada90d0ff2f05cf25e901c91753f34b2692aa461e380"
+    },
+    {
+      "path": "packages/domain/src/format.js",
+      "sha256": "aba940fcdda374e0e24c7561d5ec52bb778472e3b5d6231f4414429faff61c2e"
+    },
+    {
+      "path": "packages/domain/src/habits.js",
+      "sha256": "c99afefa790de363e885dff198035c3c3b245cd96e81c31678cc6ae1959c746e"
+    },
+    {
+      "path": "packages/domain/src/index.mjs",
+      "sha256": "2842347ca591acf19b8b396a32349599f8242d340b774a31180864306fe5a83d"
+    },
+    {
+      "path": "packages/domain/src/planning/classSchedule.js",
+      "sha256": "f108d2cbcbf27bd3b687108a69568422efa14ee0ffc1f790e173f22df01bf8ce"
+    },
+    {
+      "path": "packages/domain/src/planning/proposal.js",
+      "sha256": "cbc0b21267cf128f66a868fa447461affdf08fe1062d9bc74cb5e4c624c1611c"
+    },
+    {
+      "path": "packages/domain/src/profiles.js",
+      "sha256": "db94ca31179181e0c2231d9163305b1d0d3b37d48acab317540558947138f9c7"
+    },
+    {
+      "path": "packages/domain/src/projections.mjs",
+      "sha256": "9ee35d53df837d0941983886c46d5e88d85ab4b8304883400785514f19e3b0ac"
+    },
+    {
+      "path": "packages/domain/src/schedule.js",
+      "sha256": "c0fd7eee60a1537af946b87046d23a82c0213703bb5063362dd638a8308a158d"
+    },
+    {
+      "path": "packages/domain/src/seeds.js",
+      "sha256": "7d547557a366f3733bdebbb5b0d765e2c47d2f9765ea9108275fea53363ce42e"
+    },
+    {
+      "path": "packages/domain/src/store.js",
+      "sha256": "ed1e3c5ac8a39cb81b8db08bcb5b3088a4679e62f3aadcf44d17ea1a6dbf6797"
+    },
+    {
+      "path": "packages/persistence/package.json",
+      "sha256": "65e6fb78f4cb2fd1d826ae101393c1e61262f06bc49add07901b49891e7e341f"
+    },
+    {
+      "path": "packages/persistence/src/commands.mjs",
+      "sha256": "9e4762acb128e4a17f5679707a2f78fd5008c0bfffdaa092ea5f84fc76ba64fb"
+    },
+    {
+      "path": "packages/persistence/src/index.mjs",
+      "sha256": "114a8c9fb91ad8821c4be658ac0cbbb591a8c8f7a284aadf5d2ffb8424f24b25"
+    },
+    {
+      "path": "packages/persistence/src/json-adapter.mjs",
+      "sha256": "d7dfa5ccb17e1d6eea829dd2068540c7cf0c564b9caf7b44a1c24e07f70ca12e"
+    },
+    {
+      "path": "packages/persistence/src/migrate.mjs",
+      "sha256": "bfbe27ffa147cd0b0a17a4e7826585006f2f26e7f22675544a54c2393791878f"
+    },
+    {
+      "path": "packages/persistence/src/postgres-adapter.mjs",
+      "sha256": "3fe893626a89f188f737ce0434d6a95b37917fb79079df1f245cabc711eca15f"
+    },
+    {
+      "path": "packages/persistence/src/repository.mjs",
+      "sha256": "75c1dbab2e8071fb437f2d8569ea767daf1a12d6fb1363cfad99a6ef1b379247"
+    },
+    {
+      "path": "packages/persistence/src/sqlite-adapter.mjs",
+      "sha256": "5708b516fdb3261163505690352206365921094c72408e4f311e30ec91fdc254"
+    },
+    {
+      "path": "packages/ui/package.json",
+      "sha256": "4f8a87083ba58b69dd104716b0b01c4f369b6ca246981dee8882a68a93c021e5"
+    },
+    {
+      "path": "packages/ui/src/BookWizard.jsx",
+      "sha256": "cfef5ec63d788b7a1a6fea0f4b6f1f6ef93a620687ead6a3039efd8d08ff359f"
+    },
+    {
+      "path": "packages/ui/src/ui.jsx",
+      "sha256": "9b8fa9e498b344e32ae697c58a9300be0a55186a5f8e14069876e552bc0f4ca7"
+    },
+    {
+      "path": "scripts/build-web.mjs",
+      "sha256": "552beec230c40a8de7e4f5fd770c2b7193e7a39c1006bd8b7307a28adadff3d5"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "sha256": "b28c05fe12e5d0e7f96b8e6863e6aed8802c17660c81bcd04243f061acd25481"
+    },
+    {
+      "path": "scripts/demo.mjs",
+      "sha256": "bc073cc2f4c3660d78588d7c918718823c37226e397efb64d3e16b61c34212a7"
+    },
+    {
+      "path": "scripts/dev.mjs",
+      "sha256": "c068c315d9cae8f6834929c9ebb8e952c79f5df07a7eee2a1a09d8d4915599ad"
+    },
+    {
+      "path": "scripts/reset.mjs",
+      "sha256": "000d84ac1f23efd1b64a64f2086095cd25bc09b05f918447ad04ee5992b70941"
+    },
+    {
+      "path": "scripts/seed-demo.mjs",
+      "sha256": "47d47ec39dc127ee953f9f9770afeea18b101babd8d39472cf36760901e5f488"
+    },
+    {
+      "path": "scripts/ss-resolve-hooks.mjs",
+      "sha256": "09cd7717c73f6023e5ab5cc4170b4c43292da8fb5da099b0ac80a675b6997632"
+    },
+    {
+      "path": "scripts/ss-resolve.mjs",
+      "sha256": "299343f41edb24e89ffee9c52e62e68892985f9d950d2680bf10ebc55e444edb"
+    },
+    {
+      "path": "scripts/web-build-lib.mjs",
+      "sha256": "db0ae54f75babf5c3c9903a7b941e065589c73db36719174aed5cd2f3a470172"
+    },
+    {
+      "path": "tests/api.test.mjs",
+      "sha256": "5733b40fc89b1b1b8c151cf5a583d38f266fba701b257122dc01ccd87785b1d1"
+    },
+    {
+      "path": "tests/legacy-hub.test.mjs",
+      "sha256": "4a0640655452a30aa17b3772d754f0f45ba6d3edeffd1290e06a5e8149cace1d"
+    },
+    {
+      "path": "tests/support/harness.mjs",
+      "sha256": "33ddae1d8bd317f9003e79d7a1abf852654e4ba10e735beade25bf1b0074acf2"
+    },
+    {
+      "path": "tests/support/register.mjs",
+      "sha256": "2feb1993c843869842e0074442f1feaf04fdda9acbefd8b20bd003041b09075f"
+    },
+    {
+      "path": "tests/support/resolve-hooks.mjs",
+      "sha256": "6c97f186e42b490c4577471e59ed9704b806717f6b3b83fad1783eff1cb1e96d"
+    },
+    {
+      "path": "tests/support/vitest-shim.mjs",
+      "sha256": "02c8df2f95f5226e2e67d219285417f2e5796483138280743eacd6078479cbfa"
+    }
+  ]
+}

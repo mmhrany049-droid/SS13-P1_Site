@@ -1,0 +1,216 @@
+{
+  "id": "log.quick",
+  "version": "1.0",
+  "title_fa": "ثبت تست سریع",
+  "entry": "subject",
+  "nodes": {
+    "subject": {
+      "type": "ask",
+      "text_fa": "کدام درس؟",
+      "ask": {
+        "slot": "subjectId",
+        "input": "choice",
+        "choicesFrom": "subjects.byRecentUse"
+      },
+      "next": "book"
+    },
+    "book": {
+      "type": "ask",
+      "text_fa": "کدام کتاب؟",
+      "ask": {
+        "slot": "bookId",
+        "input": "choice",
+        "choicesFrom": "books.bySubject"
+      },
+      "next": "rangeMode"
+    },
+    "rangeMode": {
+      "type": "action",
+      "action": {
+        "handler": "practice.suggestNextBlock",
+        "saveAs": "suggest"
+      },
+      "next": "rangePick"
+    },
+    "rangePick": {
+      "type": "menu",
+      "text_fa": "کدام بازه؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "ادامه: {{suggest.nodeTitle}} {{suggest.from}} تا {{suggest.to}}",
+            "set": {
+              "range": "{{suggest}}"
+            },
+            "next": "answers"
+          }
+        ],
+        [
+          {
+            "label_fa": "انتخاب از فهرست مباحث",
+            "next": "nodePick"
+          }
+        ],
+        [
+          {
+            "label_fa": "وارد کردن دستی شماره‌ها",
+            "next": "rangeFrom"
+          }
+        ]
+      ]
+    },
+    "nodePick": {
+      "type": "ask",
+      "text_fa": "مبحث را انتخاب کن",
+      "ask": {
+        "slot": "nodeId",
+        "input": "choice",
+        "choicesFrom": "nodes.leavesOfBook"
+      },
+      "next": [
+        {
+          "if": "exists(node.qStart)",
+          "next": "answers"
+        },
+        {
+          "if": "true",
+          "next": "rangeFrom"
+        }
+      ]
+    },
+    "rangeFrom": {
+      "type": "ask",
+      "text_fa": "از تست شماره چند؟",
+      "ask": {
+        "slot": "from",
+        "input": "number",
+        "validate": "from>=1"
+      },
+      "next": "rangeTo"
+    },
+    "rangeTo": {
+      "type": "ask",
+      "text_fa": "تا تست شماره چند؟",
+      "ask": {
+        "slot": "to",
+        "input": "number",
+        "validate": "to>=from && to-from<300"
+      },
+      "next": "answers"
+    },
+    "answers": {
+      "type": "ask",
+      "text_fa": "پاسخ‌های {{rangeSize}} تست را پشت هم بفرست (۰ = نزده). مثل: ۳۱۴۰۲۲۱",
+      "ask": {
+        "slot": "answerString",
+        "input": "answerString",
+        "validate": "len(answerString)==rangeSize"
+      },
+      "next": "time"
+    },
+    "time": {
+      "type": "menu",
+      "text_fa": "حدوداً چقدر طول کشید؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "۱۵ دقیقه",
+            "set": {
+              "minutes": 15
+            },
+            "next": "save"
+          },
+          {
+            "label_fa": "۲۰",
+            "set": {
+              "minutes": 20
+            },
+            "next": "save"
+          },
+          {
+            "label_fa": "۳۰",
+            "set": {
+              "minutes": 30
+            },
+            "next": "save"
+          }
+        ],
+        [
+          {
+            "label_fa": "۴۵",
+            "set": {
+              "minutes": 45
+            },
+            "next": "save"
+          },
+          {
+            "label_fa": "۶۰",
+            "set": {
+              "minutes": 60
+            },
+            "next": "save"
+          },
+          {
+            "label_fa": "نمی‌دانم",
+            "set": {
+              "minutes": null
+            },
+            "next": "save"
+          }
+        ]
+      ]
+    },
+    "save": {
+      "type": "action",
+      "action": {
+        "handler": "practice.saveSession",
+        "args": {
+          "timeSource": "estimated"
+        },
+        "saveAs": "result"
+      },
+      "next": "result"
+    },
+    "result": {
+      "type": "card",
+      "card": "SessionSummaryCard",
+      "text_fa": "ثبت شد ✅ درست {{result.C}} · غلط {{result.W}} · نزده {{result.B}} · درصد {{result.P}}",
+      "buttons": [
+        [
+          {
+            "label_fa": "تحلیل خطا الان",
+            "deepLink": "/practice/{{result.sessionId}}#reasons"
+          },
+          {
+            "label_fa": "بعداً",
+            "next": "later"
+          }
+        ],
+        [
+          {
+            "label_fa": "یک جلسه دیگر",
+            "next": "subject"
+          },
+          {
+            "label_fa": "🏠 منو",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "later": {
+      "type": "action",
+      "action": {
+        "handler": "errors.createAnalysisTask",
+        "args": {
+          "sessionId": "{{result.sessionId}}"
+        }
+      },
+      "next": "end"
+    },
+    "end": {
+      "type": "end",
+      "text_fa": "تحلیل خطا به کارهای امروزت اضافه شد."
+    }
+  }
+}

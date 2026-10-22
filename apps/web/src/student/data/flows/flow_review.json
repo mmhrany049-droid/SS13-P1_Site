@@ -1,0 +1,102 @@
+{
+  "id": "review",
+  "title_fa": "مرور",
+  "entry": "load",
+  "nodes": {
+    "load": {
+      "type": "action",
+      "action": {
+        "handler": "review.nextDue",
+        "saveAs": "c"
+      },
+      "next": [
+        {
+          "if": "!exists(c)",
+          "next": "done"
+        },
+        {
+          "if": "true",
+          "next": "card"
+        }
+      ]
+    },
+    "card": {
+      "type": "card",
+      "card": "ReviewCard",
+      "text_fa": "{{c.book}} · {{c.node}} · تست {{c.number}}\nاول جواب بده، بعد کلید رو ببین.",
+      "buttons": [
+        [
+          {
+            "label_fa": "نشان دادن کلید",
+            "next": "reveal"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "__back"
+          },
+          {
+            "label_fa": "🏠 منوی اصلی",
+            "flow": "menu"
+          }
+        ]
+      ]
+    },
+    "reveal": {
+      "type": "card",
+      "card": "ReviewRevealCard",
+      "text_fa": "کلید: {{c.answer}} · علت قبلی: {{c.reasons}}",
+      "buttons": [
+        [
+          {
+            "label_fa": "باز غلط",
+            "set": {
+              "rating": "again"
+            },
+            "next": "rate"
+          },
+          {
+            "label_fa": "با شک درست",
+            "set": {
+              "rating": "hard"
+            },
+            "next": "rate"
+          }
+        ],
+        [
+          {
+            "label_fa": "درست",
+            "set": {
+              "rating": "good"
+            },
+            "next": "rate"
+          },
+          {
+            "label_fa": "خیلی راحت",
+            "set": {
+              "rating": "easy"
+            },
+            "next": "rate"
+          }
+        ]
+      ]
+    },
+    "rate": {
+      "type": "action",
+      "action": {
+        "handler": "review.rate",
+        "args": {
+          "id": "{{c.id}}",
+          "rating": "{{rating}}"
+        }
+      },
+      "next": "load"
+    },
+    "done": {
+      "type": "end",
+      "text_fa": "مرورهای امروز تمام شد ✅"
+    }
+  },
+  "version": "1.0"
+}

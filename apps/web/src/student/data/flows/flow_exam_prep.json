@@ -1,0 +1,127 @@
+{
+  "id": "exam.prep",
+  "version": "1.0",
+  "title_fa": "آمادگی آزمون",
+  "entry": "pickExam",
+  "nodes": {
+    "pickExam": {
+      "type": "ask",
+      "text_fa": "کدام آزمون؟",
+      "ask": {
+        "slot": "examId",
+        "input": "choice",
+        "choicesFrom": "exams.upcoming"
+      },
+      "next": "compute"
+    },
+    "compute": {
+      "type": "action",
+      "action": {
+        "handler": "paas.readiness",
+        "saveAs": "r"
+      },
+      "next": [
+        {
+          "if": "r.insufficient",
+          "next": "noData"
+        },
+        {
+          "if": "true",
+          "next": "card"
+        }
+      ]
+    },
+    "noData": {
+      "type": "message",
+      "text_fa": "برای پیش‌بینی هنوز داده کافی نیست. حداقل ۳۰ تست در مباحث این آزمون ثبت کن.",
+      "buttons": [
+        [
+          {
+            "label_fa": "ثبت تست",
+            "flow": "log.quick"
+          }
+        ]
+      ]
+    },
+    "card": {
+      "type": "card",
+      "card": "ReadinessCard",
+      "text_fa": "آمادگی: {{r.RI}} از ۱۰۰ · پیش‌بینی کل: {{r.P10}} تا {{r.P90}} (میانه {{r.P50}})",
+      "buttons": [
+        [
+          {
+            "label_fa": "نزده‌ها",
+            "deepLink": "/prep/{{examId}}?tab=untested"
+          },
+          {
+            "label_fa": "نخوانده‌ها",
+            "deepLink": "/prep/{{examId}}?tab=untaught"
+          }
+        ],
+        [
+          {
+            "label_fa": "در حال فراموشی",
+            "deepLink": "/prep/{{examId}}?tab=fading"
+          },
+          {
+            "label_fa": "استراتژی سر جلسه",
+            "next": "strategy"
+          }
+        ],
+        [
+          {
+            "label_fa": "برنامه آمادگی بریز",
+            "next": "plan"
+          }
+        ]
+      ]
+    },
+    "strategy": {
+      "type": "action",
+      "action": {
+        "handler": "paas.strategy",
+        "saveAs": "s"
+      },
+      "next": "strategyCard"
+    },
+    "strategyCard": {
+      "type": "card",
+      "card": "StrategyCard",
+      "buttons": [
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "card"
+          }
+        ]
+      ]
+    },
+    "plan": {
+      "type": "action",
+      "action": {
+        "handler": "paas.actionPlanToDraft",
+        "saveAs": "p"
+      },
+      "next": "planCard"
+    },
+    "planCard": {
+      "type": "card",
+      "card": "DraftPlanCard",
+      "text_fa": "{{p.count}} کار پیشنهادی ساخته شد (پیش‌نویس). تأیید می‌کنی؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "دیدن و تأیید",
+            "deepLink": "/planner?proposal={{p.proposalId}}"
+          }
+        ],
+        [
+          {
+            "label_fa": "⬅️ برگشت",
+            "next": "card"
+          }
+        ]
+      ]
+    }
+  }
+}

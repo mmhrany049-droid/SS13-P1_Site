@@ -1,0 +1,14 @@
+[Unit]
+Description=SS 13 (one site: student cabin + management workspace)
+After=network.target
+[Service]
+WorkingDirectory=/opt/ss
+EnvironmentFile=/opt/ss/.env
+ExecStart=/usr/bin/node --disable-warning=ExperimentalWarning --import ./scripts/ss-resolve.mjs apps/api/src/server.mjs
+Restart=always
+User=ss
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/opt/ss/data
+[Install]
+WantedBy=multi-user.target

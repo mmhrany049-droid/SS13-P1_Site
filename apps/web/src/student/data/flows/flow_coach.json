@@ -1,0 +1,133 @@
+{
+  "id": "coach",
+  "version": "1.0",
+  "title_fa": "مشاور مطالعه",
+  "entry": "area",
+  "nodes": {
+    "area": {
+      "type": "menu",
+      "text_fa": "مشکل اصلی چیست؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "شروع نمی‌کنم / اهمال‌کاری",
+            "next": "proc1"
+          },
+          {
+            "label_fa": "زود فراموش می‌کنم",
+            "next": "forget1"
+          }
+        ],
+        [
+          {
+            "label_fa": "سر آزمون استرس دارم",
+            "next": "anx1"
+          },
+          {
+            "label_fa": "درصدم افت کرده",
+            "next": "drop1"
+          }
+        ]
+      ]
+    },
+    "proc1": {
+      "type": "menu",
+      "text_fa": "بیشتر کدام؟",
+      "buttons": [
+        [
+          {
+            "label_fa": "کار خیلی بزرگ است",
+            "next": "proc_big"
+          },
+          {
+            "label_fa": "نمی‌دانم از کجا",
+            "next": "proc_unclear"
+          }
+        ],
+        [
+          {
+            "label_fa": "حوصله ندارم",
+            "next": "proc_bored"
+          }
+        ]
+      ]
+    },
+    "proc_big": {
+      "type": "card",
+      "card": "AdviceCard",
+      "text_fa": "کار را به یک قدم ۲ دقیقه‌ای بشکن (فقط ۵ تست اول) و یک برنامه «اگر… آنگاه…» بنویس: «اگر ساعت ۱۷ شد، آنگاه ۵ تست اول آلکان‌ها را می‌زنم».\nمنبع: Gollwitzer & Sheeran, 2006 (فرا‌تحلیل)",
+      "buttons": [
+        [
+          {
+            "label_fa": "ساخت قدم ۲ دقیقه‌ای",
+            "deepLink": "/planner?starter=1"
+          }
+        ]
+      ]
+    },
+    "proc_unclear": {
+      "type": "card",
+      "card": "AdviceCard",
+      "text_fa": "حجم و معیار موفقیت را مشخص کن: «۱۵ تست، هدف ۶۰٪». ماموریت امروز را باز کن.\nمنبع: Locke & Latham, 2002",
+      "buttons": [
+        [
+          {
+            "label_fa": "ماموریت‌های امروز",
+            "flow": "rewards"
+          }
+        ]
+      ]
+    },
+    "proc_bored": {
+      "type": "card",
+      "card": "AdviceCard",
+      "text_fa": "یک لذت را فقط به همین کار گره بزن (مثلاً موسیقی فقط موقع مرور) و تست‌ها را مخلوط کن.\nمنبع: Milkman et al., 2014؛ Brunmair & Richter, 2019"
+    },
+    "forget1": {
+      "type": "card",
+      "card": "AdviceCard",
+      "text_fa": "به‌جای دوباره‌خوانی، خودت را بیازما و مرور را فاصله‌دار کن؛ صف مرور برنامه همین کار را می‌کند.\nمنبع: Yang et al., 2021؛ Cepeda et al., 2008",
+      "buttons": [
+        [
+          {
+            "label_fa": "مرور امروز",
+            "flow": "review"
+          }
+        ]
+      ]
+    },
+    "anx1": {
+      "type": "card",
+      "card": "AdviceCard",
+      "text_fa": "۱۰ دقیقه قبل آزمون نگرانی‌هایت را بنویس، و هیجان را «آماده‌شدن بدن» تفسیر کن. چند آزمون شبیه‌ساز زمان‌دار هم بزن.\nمنبع: Ramirez & Beilock, 2011؛ Jamieson et al., 2010\nاگر استرس ادامه‌دار است با مشاور مدرسه یا یک بزرگ‌تر مورد اعتماد حرف بزن.",
+      "buttons": [
+        [
+          {
+            "label_fa": "ساخت آزمون شبیه‌ساز",
+            "deepLink": "/practice/new?mock=1"
+          }
+        ]
+      ]
+    },
+    "drop1": {
+      "type": "action",
+      "action": {
+        "handler": "insights.explainDrop",
+        "saveAs": "d"
+      },
+      "next": "dropCard"
+    },
+    "dropCard": {
+      "type": "card",
+      "card": "InsightCard",
+      "buttons": [
+        [
+          {
+            "label_fa": "نشتی درصد",
+            "deepLink": "/analytics?tab=errors"
+          }
+        ]
+      ]
+    }
+  }
+}

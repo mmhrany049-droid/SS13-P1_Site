@@ -1,0 +1,1 @@
+{ "name": "@ss/domain", "version": "13.0.0", "private": true, "type": "module", "description": "SS core engines (scoring, review, planner, habits, capacity, brain, curriculum) — one copy for web, api and tests", "exports": { ".": "./src/index.mjs", "./*": "./src/*" } }
